@@ -1,0 +1,5 @@
+- Get blackbox tests working again.
+- Improve dlcs: implicitly write config unless flag, but only if credentials are 
+  valid.
+- Store per-URI delicious spec'ced card-metadata for more find-grained cache
+  control, import(/export?) delicious XML.

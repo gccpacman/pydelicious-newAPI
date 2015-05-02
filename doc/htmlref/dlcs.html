@@ -1,0 +1,263 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module dlcs</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>dlcs</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/berend/project/pydelicious/trunk/tools/dlcs.py">/home/berend/project/pydelicious/trunk/tools/dlcs.py</a></font></td></tr></table>
+    <p><tt>dlcs&nbsp;-&nbsp;Manage&nbsp;a&nbsp;del.icio.us&nbsp;bookmark&nbsp;collection&nbsp;from&nbsp;the&nbsp;command-line.<br>
+&nbsp;<br>
+&nbsp;<br>
+Overview<br>
+--------<br>
+`dlcs`&nbsp;is&nbsp;a&nbsp;simple&nbsp;wrapper&nbsp;around&nbsp;pydelicious.DeliciousAPI.&nbsp;If&nbsp;offers<br>
+some&nbsp;facilities&nbsp;to&nbsp;get&nbsp;data&nbsp;from&nbsp;your&nbsp;online&nbsp;bookmark&nbsp;collection&nbsp;and<br>
+to&nbsp;perfom&nbsp;operations.&nbsp;See::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;%&nbsp;dlcs&nbsp;--help<br>
+&nbsp;<br>
+This&nbsp;tool&nbsp;enables&nbsp;quick&nbsp;access&nbsp;but&nbsp;the&nbsp;server&nbsp;communication&nbsp;may&nbsp;be&nbsp;slow&nbsp;and<br>
+when&nbsp;doing&nbsp;multiple&nbsp;expensive&nbsp;requests&nbsp;del.icio.us&nbsp;may&nbsp;throttle&nbsp;you&nbsp;and<br>
+return&nbsp;503's.&nbsp;This&nbsp;all&nbsp;depends&nbsp;on&nbsp;your&nbsp;collection&nbsp;size&nbsp;(posts/tags/bundles)<br>
+ofcourse.&nbsp;In&nbsp;any&nbsp;case,&nbsp;the&nbsp;post&nbsp;and&nbsp;tag&nbsp;lists&nbsp;are&nbsp;stored&nbsp;locally&nbsp;and&nbsp;some<br>
+changes&nbsp;to&nbsp;your&nbsp;collection&nbsp;may&nbsp;not&nbsp;be&nbsp;noticed&nbsp;until&nbsp;you&nbsp;clear&nbsp;this&nbsp;cache<br>
+since&nbsp;posts/update&nbsp;does&nbsp;not&nbsp;notice&nbsp;any&nbsp;edits.<br>
+&nbsp;<br>
+Quickstart<br>
+----------<br>
+Just&nbsp;start&nbsp;`dlcs`&nbsp;using::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;%&nbsp;dlcs&nbsp;-u&nbsp;&lt;username&gt;<br>
+&nbsp;<br>
+Post&nbsp;any&nbsp;URL&nbsp;using::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;%&nbsp;dlcs&nbsp;postit&nbsp;&lt;URL&gt;<br>
+&nbsp;<br>
+Configuration<br>
+-------------<br>
+Your&nbsp;username&nbsp;and&nbsp;password&nbsp;can&nbsp;be&nbsp;stored&nbsp;in&nbsp;an&nbsp;INI&nbsp;formatted&nbsp;configuration<br>
+file&nbsp;under&nbsp;the&nbsp;section&nbsp;name&nbsp;'dlcs'.&nbsp;The&nbsp;default&nbsp;location&nbsp;is&nbsp;~/.dlcs-rc<br>
+but&nbsp;this&nbsp;can&nbsp;be&nbsp;changed&nbsp;using&nbsp;command&nbsp;line&nbsp;options.&nbsp;If&nbsp;no&nbsp;username&nbsp;or<br>
+password&nbsp;are&nbsp;provided&nbsp;`dlcs`&nbsp;will&nbsp;guess&nbsp;the&nbsp;username&nbsp;and&nbsp;prompt&nbsp;for&nbsp;the<br>
+password.<br>
+&nbsp;<br>
+Limitation<br>
+----------<br>
+-&nbsp;Bundle&nbsp;sizes&nbsp;are&nbsp;restricted&nbsp;by&nbsp;the&nbsp;maximum&nbsp;URL&nbsp;size&nbsp;[xxx:length?],&nbsp;the<br>
+&nbsp;&nbsp;del.icio.us&nbsp;interface&nbsp;allows&nbsp;bigger&nbsp;bundles.<br>
+&nbsp;<br>
+Integration<br>
+-----------<br>
+When&nbsp;using&nbsp;curses&nbsp;based&nbsp;browsers&nbsp;you&nbsp;may&nbsp;have&nbsp;to&nbsp;miss&nbsp;the&nbsp;javascript<br>
+bookmarklets&nbsp;since&nbsp;most&nbsp;TUI&nbsp;browsers&nbsp;don't&nbsp;support&nbsp;these.&nbsp;That&nbsp;is&nbsp;why&nbsp;dlcs&nbsp;<br>
+has&nbsp;a&nbsp;command&nbsp;`postit`&nbsp;that&nbsp;takes&nbsp;the&nbsp;URL&nbsp;and&nbsp;fires&nbsp;up&nbsp;your&nbsp;favorite&nbsp;editor&nbsp;<br>
+to&nbsp;offer&nbsp;the&nbsp;same&nbsp;functionality.<br>
+&nbsp;<br>
+To&nbsp;bookmark&nbsp;HTTP&nbsp;URLs&nbsp;with&nbsp;lynx,&nbsp;put&nbsp;the&nbsp;following&nbsp;line&nbsp;in&nbsp;your&nbsp;lynx.cfg::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;EXTERNAL:http:dlcs&nbsp;postit&nbsp;%s<br>
+&nbsp;<br>
+For&nbsp;the&nbsp;elinks&nbsp;browser,&nbsp;create&nbsp;a&nbsp;uri_passing&nbsp;rule&nbsp;in&nbsp;the&nbsp;configuration&nbsp;file.<br>
+Something&nbsp;like&nbsp;the&nbsp;following::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;set&nbsp;document.uri_passing.dlcs&nbsp;=&nbsp;"bash&nbsp;-c&nbsp;"dlcs&nbsp;postit&nbsp;%c""<br>
+&nbsp;<br>
+License<br>
+-------<br>
+Same&nbsp;as&nbsp;`pydelicious`,&nbsp;FreeBSD&nbsp;or&nbsp;Simplified&nbsp;BSD&nbsp;license.<br>
+See&nbsp;license.txt&nbsp;for&nbsp;details&nbsp;and&nbsp;the&nbsp;copyright&nbsp;holders.<br>
+&nbsp;<br>
+TODO<br>
+----<br>
+-&nbsp;adapt&nbsp;to&nbsp;new&nbsp;meta&nbsp;attr's<br>
+-&nbsp;catch&nbsp;DeliciousErrors<br>
+-&nbsp;Output&nbsp;formatting&nbsp;(--outf)<br>
+-&nbsp;Pretty&nbsp;JSON&nbsp;printer<br>
+-&nbsp;Append&nbsp;recent&nbsp;posts&nbsp;(and&nbsp;tags)&nbsp;to&nbsp;cache<br>
+-&nbsp;Some&nbsp;intelligent&nbsp;statistics&nbsp;on&nbsp;the&nbsp;tag&nbsp;collection&nbsp;(tag&nbsp;size,&nbsp;usage)<br>
+-&nbsp;Other&nbsp;users,&nbsp;is&nbsp;it&nbsp;possible&nbsp;to:&nbsp;list&nbsp;all&nbsp;posters&nbsp;for&nbsp;a&nbsp;URL,&nbsp;all&nbsp;tags&nbsp;for&nbsp;a&nbsp;URL?&nbsp;Popular&nbsp;tags?<br>
+-&nbsp;There&nbsp;are&nbsp;no&nbsp;commands&nbsp;to&nbsp;work&nbsp;on&nbsp;date&nbsp;lists&nbsp;(but&nbsp;'req'&nbsp;could)<br>
+-&nbsp;Tag&nbsp;relations,<br>
+-&nbsp;Tag&nbsp;value,&nbsp;could&nbsp;a&nbsp;simple&nbsp;algorithm&nbsp;weigh&nbsp;the&nbsp;value&nbsp;of&nbsp;a&nbsp;specific&nbsp;tag&nbsp;(combination)?</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="codecs.html">codecs</a><br>
+<a href="getpass.html">getpass</a><br>
+<a href="locale.html">locale</a><br>
+</td><td width="25%" valign=top><a href="math.html">math</a><br>
+<a href="optparse.html">optparse</a><br>
+<a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="pydelicious.html">pydelicious</a><br>
+<a href="sys.html">sys</a><br>
+<a href="time.html">time</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="dlcs.html#DebugWrapper">DebugWrapper</a>
+</font></dt><dt><font face="helvetica, arial"><a href="dlcs.html#MethodWrapper">MethodWrapper</a>
+</font></dt></dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="DebugWrapper">class <strong>DebugWrapper</strong></a></font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="DebugWrapper-__getattr__"><strong>__getattr__</strong></a>(self, name)</dt></dl>
+
+<dl><dt><a name="DebugWrapper-__init__"><strong>__init__</strong></a>(self, base, log)</dt></dl>
+
+<dl><dt><a name="DebugWrapper-__setattr__"><strong>__setattr__</strong></a>(self, name, value)</dt></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="MethodWrapper">class <strong>MethodWrapper</strong></a></font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="MethodWrapper-__call__"><strong>__call__</strong></a>(self, *args)</dt></dl>
+
+<dl><dt><a name="MethodWrapper-__init__"><strong>__init__</strong></a>(self, name, method, base, log)</dt></dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-bundle"><strong>bundle</strong></a>(conf, dlcs, name, *tags, **opts)</dt><dd><tt>Bundle&nbsp;some&nbsp;tags&nbsp;under&nbsp;a&nbsp;name,&nbsp;replaces&nbsp;previous&nbsp;bundle&nbsp;contents::<br>
+&nbsp;<br>
+%&nbsp;dlcs&nbsp;bundle&nbsp;bundlename&nbsp;<a href="#-tag">tag</a>(s)</tt></dd></dl>
+ <dl><dt><a name="-bundleadd"><strong>bundleadd</strong></a>(conf, dlcs, name, *tags, **opts)</dt><dd><tt>Add&nbsp;one&nbsp;or&nbsp;more&nbsp;tags&nbsp;to&nbsp;a&nbsp;bundle.&nbsp;Retrieves&nbsp;current&nbsp;bundles,&nbsp;adds&nbsp;the<br>
+tags&nbsp;to&nbsp;the&nbsp;indicated&nbsp;bundle&nbsp;and&nbsp;posts&nbsp;it&nbsp;back&nbsp;to&nbsp;del.icio.us::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;%&nbsp;dlcs&nbsp;bundleadd&nbsp;bundlename&nbsp;<a href="#-tag">tag</a>(s)</tt></dd></dl>
+ <dl><dt><a name="-bundleremove"><strong>bundleremove</strong></a>(conf, dlcs, name, *tags, **opts)</dt><dd><tt>Remove&nbsp;one&nbsp;or&nbsp;more&nbsp;tags&nbsp;from&nbsp;a&nbsp;bundle.&nbsp;Retrieves&nbsp;current&nbsp;bundles,&nbsp;removes<br>
+the&nbsp;tags&nbsp;from&nbsp;the&nbsp;indicated&nbsp;bundle&nbsp;and&nbsp;posts&nbsp;it&nbsp;back&nbsp;to&nbsp;del.icio.us::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;%&nbsp;dlcs&nbsp;bundleremove&nbsp;bundlename&nbsp;<a href="#-tag">tag</a>(s)</tt></dd></dl>
+ <dl><dt><a name="-bundles"><strong>bundles</strong></a>(conf, dlcs, **opts)</dt><dd><tt>Retrieve&nbsp;all&nbsp;bundles&nbsp;and&nbsp;print&nbsp;their&nbsp;names.</tt></dd></dl>
+ <dl><dt><a name="-cache_append_posts"><strong>cache_append_posts</strong></a>(fl)</dt></dl>
+ <dl><dt><a name="-cache_file"><strong>cache_file</strong></a>(fn, data)</dt></dl>
+ <dl><dt><a name="-cached_posts"><strong>cached_posts</strong></a>(conf, dlcs, noupdate<font color="#909090">=False</font>)</dt><dd><tt>Same&nbsp;as&nbsp;cached_tags&nbsp;but&nbsp;for&nbsp;the&nbsp;post&nbsp;list.</tt></dd></dl>
+ <dl><dt><a name="-cached_tags"><strong>cached_tags</strong></a>(conf, dlcs, noupdate<font color="#909090">=False</font>)</dt><dd><tt>Make&nbsp;sure&nbsp;the&nbsp;tag&nbsp;list&nbsp;is&nbsp;cached&nbsp;locally.&nbsp;Updates&nbsp;when&nbsp;the&nbsp;file&nbsp;is<br>
+older&nbsp;than&nbsp;the&nbsp;last&nbsp;time&nbsp;the&nbsp;posts&nbsp;where&nbsp;updated&nbsp;(according&nbsp;to<br>
+del.icio.us&nbsp;posts/update,&nbsp;which&nbsp;only&nbsp;notes&nbsp;new&nbsp;posts,&nbsp;not&nbsp;any&nbsp;updates).</tt></dd></dl>
+ <dl><dt><a name="-clearcache"><strong>clearcache</strong></a>(conf, dlcs, *clear, **opts)</dt><dd><tt>Delete&nbsp;all&nbsp;locally&nbsp;cached&nbsp;data::<br>
+&nbsp;<br>
+%&nbsp;dlcs&nbsp;clear&nbsp;[tags&nbsp;|&nbsp;posts]</tt></dd></dl>
+ <dl><dt><a name="-deletebundle"><strong>deletebundle</strong></a>(conf, dlcs, name, **opts)</dt><dd><tt>Delete&nbsp;an&nbsp;entire&nbsp;bundle.</tt></dd></dl>
+ <dl><dt><a name="-deleteposts"><strong>deleteposts</strong></a>(conf, dlcs, *urls, **opts)</dt><dd><tt>Delete&nbsp;one&nbsp;or&nbsp;more&nbsp;URLs.</tt></dd></dl>
+ <dl><dt><a name="-findposts"><strong>findposts</strong></a>(conf, dlcs, keyword, **opts)</dt><dd><tt>Search&nbsp;all&nbsp;text&nbsp;fields&nbsp;of&nbsp;all&nbsp;posts&nbsp;for&nbsp;the&nbsp;keyword&nbsp;and&nbsp;print&nbsp;machting&nbsp;URLs.<br>
+&nbsp;<br>
+%&nbsp;dlcs&nbsp;findposts&nbsp;keyword</tt></dd></dl>
+ <dl><dt><a name="-findtags"><strong>findtags</strong></a>(conf, dlcs, *tags, **opts)</dt><dd><tt>Search&nbsp;all&nbsp;tags&nbsp;for&nbsp;(a&nbsp;part&nbsp;of)&nbsp;a&nbsp;tag.</tt></dd></dl>
+ <dl><dt><a name="-getbundle"><strong>getbundle</strong></a>(conf, dlcs, name, **opts)</dt><dd><tt>Retrieve&nbsp;all&nbsp;tags&nbsp;within&nbsp;a&nbsp;bundle.</tt></dd></dl>
+ <dl><dt><a name="-getposts"><strong>getposts</strong></a>(conf, dlcs, *urls, **opts)</dt><dd><tt>Print&nbsp;the&nbsp;posts&nbsp;for&nbsp;the&nbsp;given&nbsp;URLs&nbsp;in&nbsp;JSON.</tt></dd></dl>
+ <dl><dt><a name="-gettags"><strong>gettags</strong></a>(conf, dlcs, *tags, **opts)</dt><dd><tt>Print&nbsp;info&nbsp;about&nbsp;tag.</tt></dd></dl>
+ <dl><dt><a name="-help"><strong>help</strong></a>(conf, dlcs, cmd<font color="#909090">=''</font>, **opts)</dt><dd><tt>Prints&nbsp;the&nbsp;docstring&nbsp;for&nbsp;a&nbsp;command&nbsp;or&nbsp;DeliciousAPI&nbsp;method.</tt></dd></dl>
+ <dl><dt><a name="-http_dump"><strong>http_dump</strong></a>(fl)</dt><dd><tt>Format&nbsp;fileobject&nbsp;wrapped&nbsp;in&nbsp;urllib.addinfourl&nbsp;as&nbsp;HTTP&nbsp;message&nbsp;string<br>
+and&nbsp;return.</tt></dd></dl>
+ <dl><dt><a name="-info"><strong>info</strong></a>(conf, dlcs, **opts)</dt><dd><tt>Default&nbsp;command.</tt></dd></dl>
+ <dl><dt><a name="-main"><strong>main</strong></a>(argv)</dt><dd><tt>This&nbsp;will&nbsp;prepare&nbsp;al&nbsp;input&nbsp;data&nbsp;and&nbsp;call&nbsp;a&nbsp;command&nbsp;function&nbsp;to&nbsp;perform<br>
+the&nbsp;operations.&nbsp;Default&nbsp;command&nbsp;is&nbsp;`<a href="#-info">info</a>()`.<br>
+&nbsp;<br>
+Configuration&nbsp;file&nbsp;is&nbsp;loaded&nbsp;and&nbsp;used&nbsp;to&nbsp;store&nbsp;username/password.</tt></dd></dl>
+ <dl><dt><a name="-mates"><strong>mates</strong></a>(conf, dlcs, *args, **opts)</dt><dd><tt>The&nbsp;following&nbsp;was&nbsp;adapted&nbsp;from&nbsp;delicious_mates.<br>
+<a href="http://www.aiplayground.org/artikel/delicious-mates/">http://www.aiplayground.org/artikel/delicious-mates/</a><br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;%&nbsp;dlcs&nbsp;mates&nbsp;[max_mates[,&nbsp;min_bookmarks[,&nbsp;min_common]]]</tt></dd></dl>
+ <dl><dt><a name="-md5"><strong>md5</strong></a> = openssl_md5(...)</dt><dd><tt>Returns&nbsp;a&nbsp;md5&nbsp;hash&nbsp;object;&nbsp;optionally&nbsp;initialized&nbsp;with&nbsp;a&nbsp;string</tt></dd></dl>
+ <dl><dt><a name="-output"><strong>output</strong></a>(cmd, opts, data)</dt></dl>
+ <dl><dt><a name="-output_json"><strong>output_json</strong></a>(data)</dt></dl>
+ <dl><dt><a name="-output_prettyjson"><strong>output_prettyjson</strong></a>(data)</dt></dl>
+ <dl><dt><a name="-output_rst"><strong>output_rst</strong></a>(data)</dt></dl>
+ <dl><dt><a name="-output_text"><strong>output_text</strong></a>(data)</dt><dd><tt>#&nbsp;TODO:&nbsp;write&nbsp;output&nbsp;formatting&nbsp;for&nbsp;text</tt></dd></dl>
+ <dl><dt><a name="-parse_argv_split"><strong>parse_argv_split</strong></a>(options, argv, usage<font color="#909090">='%prog [args] [options]'</font>)</dt><dd><tt>Parse&nbsp;argument&nbsp;vector&nbsp;to&nbsp;a&nbsp;tuple&nbsp;with&nbsp;an&nbsp;arguments&nbsp;list&nbsp;and&nbsp;an<br>
+option&nbsp;dictionary.</tt></dd></dl>
+ <dl><dt><a name="-post"><strong>post</strong></a>(conf, dlcs, url, description, extended, *tags, **opts)</dt><dd><tt>Do&nbsp;a&nbsp;standard&nbsp;post&nbsp;to&nbsp;del.icio.us::<br>
+&nbsp;<br>
+%&nbsp;dlcs&nbsp;post&nbsp;"URL"&nbsp;"DESCRIPTION"&nbsp;"EXTENDED"&nbsp;tag1&nbsp;tag2...</tt></dd></dl>
+ <dl><dt><a name="-postit"><strong>postit</strong></a>(conf, dlcs, url, shared<font color="#909090">='yes'</font>, replace<font color="#909090">='no'</font>, **opts)</dt><dd><tt>Create&nbsp;and&nbsp;edit&nbsp;posts.</tt></dd></dl>
+ <dl><dt><a name="-posts"><strong>posts</strong></a>(conf, dlcs, *urls, **opts)</dt><dd><tt>Either&nbsp;prints&nbsp;the&nbsp;ALL&nbsp;URLs&nbsp;or&nbsp;posts&nbsp;of&nbsp;given&nbsp;urls.</tt></dd></dl>
+ <dl><dt><a name="-postsupdate"><strong>postsupdate</strong></a>(conf, dlcs, **opts)</dt><dd><tt>Print&nbsp;last&nbsp;update&nbsp;time.</tt></dd></dl>
+ <dl><dt><a name="-prettify_json"><strong>prettify_json</strong></a>(json, level<font color="#909090">=0</font>)</dt><dd><tt>Formats&nbsp;a&nbsp;JSON&nbsp;string&nbsp;to&nbsp;separated,&nbsp;indented&nbsp;lines.</tt></dd></dl>
+ <dl><dt><a name="-recent"><strong>recent</strong></a>(conf, dlcs, **opts)</dt><dd><tt>Fetch&nbsp;the&nbsp;15&nbsp;most&nbsp;recent&nbsp;posts.</tt></dd></dl>
+ <dl><dt><a name="-rename"><strong>rename</strong></a>(conf, dlcs, oldtag, *newtags, **opts)</dt><dd><tt>rename&nbsp;a&nbsp;tag&nbsp;to&nbsp;one&nbsp;or&nbsp;more&nbsp;tags.<br>
+&nbsp;<br>
+%&nbsp;dlcs&nbsp;rename&nbsp;oldtag&nbsp;newtag(s)</tt></dd></dl>
+ <dl><dt><a name="-req"><strong>req</strong></a>(conf, dlcs, path, **opts)</dt><dd><tt>Request&nbsp;data&nbsp;from&nbsp;a&nbsp;(URI-)path&nbsp;using&nbsp;pydelicious.DeliciousAPI.&nbsp;E.g.::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;%&nbsp;dlcs&nbsp;req&nbsp;posts/get?tag=energy<br>
+&nbsp;&nbsp;&nbsp;&nbsp;%&nbsp;dlcs&nbsp;req&nbsp;--outf=raw&nbsp;tags/bundles/all<br>
+&nbsp;&nbsp;&nbsp;&nbsp;%&nbsp;dlcs&nbsp;req&nbsp;-d&nbsp;posts/update<br>
+&nbsp;<br>
+The&nbsp;`raw`&nbsp;option&nbsp;causes&nbsp;the&nbsp;response&nbsp;XML&nbsp;to&nbsp;be&nbsp;printed&nbsp;as&nbsp;JSON,&nbsp;`dump`<br>
+prints&nbsp;the&nbsp;entire&nbsp;HTTP&nbsp;XML&nbsp;response.&nbsp;Note&nbsp;that&nbsp;since&nbsp;the&nbsp;v1&nbsp;API&nbsp;is&nbsp;not&nbsp;RESTful<br>
+you&nbsp;can&nbsp;change&nbsp;data&nbsp;using&nbsp;this&nbsp;function&nbsp;too.&nbsp;E.g.::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;%&nbsp;dlcs&nbsp;req&nbsp;tags/bundles/delete?bundle=foo<br>
+&nbsp;&nbsp;&nbsp;&nbsp;%&nbsp;dlcs&nbsp;req&nbsp;"tags/bundles/set?bundle=foo&amp;tags=bar%20baz"<br>
+&nbsp;<br>
+Remember&nbsp;to&nbsp;URL&nbsp;encode&nbsp;and&nbsp;use&nbsp;shell-escaping&nbsp;on&nbsp;the&nbsp;paths.</tt></dd></dl>
+ <dl><dt><a name="-shortrepr"><strong>shortrepr</strong></a>(object)</dt><dd><tt>#&nbsp;Debugwrappers</tt></dd></dl>
+ <dl><dt><a name="-stats"><strong>stats</strong></a>(conf, dlcs, **opts)</dt><dd><tt>Statistics</tt></dd></dl>
+ <dl><dt><a name="-tag"><strong>tag</strong></a>(conf, dlcs, tags, *urls, **opts)</dt><dd><tt>Tag&nbsp;all&nbsp;URLs&nbsp;with&nbsp;the&nbsp;given&nbsp;<a href="#-tag">tag</a>(s)::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;%&nbsp;dlcs&nbsp;tag&nbsp;"tag1&nbsp;tag2"&nbsp;http://...&nbsp;http://...<br>
+&nbsp;<br>
+This&nbsp;will&nbsp;retrieve&nbsp;the&nbsp;post&nbsp;for&nbsp;each&nbsp;URL,&nbsp;add&nbsp;the&nbsp;given&nbsp;tags&nbsp;and&nbsp;then<br>
+replace&nbsp;the&nbsp;post&nbsp;at&nbsp;del.icio.us.&nbsp;URLs&nbsp;not&nbsp;in&nbsp;the&nbsp;collection&nbsp;cause<br>
+a&nbsp;message&nbsp;to&nbsp;stderr&nbsp;and&nbsp;are&nbsp;ignored.</tt></dd></dl>
+ <dl><dt><a name="-tagged"><strong>tagged</strong></a>(conf, dlcs, *tags, **opts)</dt><dd><tt>Request&nbsp;all&nbsp;posts&nbsp;for&nbsp;a&nbsp;tag&nbsp;or&nbsp;overlap&nbsp;of&nbsp;tags.&nbsp;Print&nbsp;URLs.<br>
+&nbsp;<br>
+%&nbsp;dlcs&nbsp;tagged&nbsp;tag&nbsp;[tag2&nbsp;...]</tt></dd></dl>
+ <dl><dt><a name="-tagrel"><strong>tagrel</strong></a>(conf, dlcs, *tags, **opts)</dt><dd><tt>Print&nbsp;related&nbsp;tags.<br>
+&nbsp;<br>
+Finds&nbsp;all&nbsp;posts&nbsp;tagged&nbsp;`tags`&nbsp;and&nbsp;gather&nbsp;other&nbsp;tags&nbsp;for&nbsp;post.</tt></dd></dl>
+ <dl><dt><a name="-tags"><strong>tags</strong></a>(conf, dlcs, *count, **opts)</dt><dd><tt>Print&nbsp;all&nbsp;tags,&nbsp;optionally&nbsp;filtered&nbsp;by&nbsp;their&nbsp;count.<br>
+&nbsp;<br>
+%&nbsp;dlcs&nbsp;tags&nbsp;[[&nbsp;'&gt;'&nbsp;|&nbsp;'&lt;'&nbsp;|&nbsp;'='&nbsp;]&nbsp;count]</tt></dd></dl>
+ <dl><dt><a name="-untag"><strong>untag</strong></a>(conf, dlcs, tags, *urls, **opts)</dt><dd><tt>Reverse&nbsp;of&nbsp;tag,&nbsp;remove&nbsp;given&nbsp;tags&nbsp;from&nbsp;the&nbsp;given&nbsp;URLs.<br>
+Tags&nbsp;and&nbsp;URLs&nbsp;not&nbsp;found&nbsp;are&nbsp;reported&nbsp;on&nbsp;stderr&nbsp;and&nbsp;ignored.<br>
+Provide&nbsp;only&nbsp;tag&nbsp;names&nbsp;without&nbsp;URL&nbsp;to&nbsp;completely&nbsp;remove&nbsp;them&nbsp;from<br>
+the&nbsp;collection.<br>
+Setting&nbsp;--ignore-case&nbsp;will&nbsp;lowercase&nbsp;all&nbsp;tags&nbsp;for&nbsp;the&nbsp;given&nbsp;URLs.</tt></dd></dl>
+ <dl><dt><a name="-updateposts"><strong>updateposts</strong></a>(conf, dlcs, **opts)</dt><dd><tt>TODO:&nbsp;Retrieve&nbsp;15&nbsp;most&nbsp;recent&nbsp;posts&nbsp;and&nbsp;add&nbsp;to&nbsp;local&nbsp;cache,<br>
+(after&nbsp;which&nbsp;it&nbsp;will&nbsp;be&nbsp;considered&nbsp;up-to-date&nbsp;again).</tt></dd></dl>
+ <dl><dt><a name="-value_sorted"><strong>value_sorted</strong></a>(dic)</dt><dd><tt>Return&nbsp;dic.items(),&nbsp;sorted&nbsp;by&nbsp;the&nbsp;values&nbsp;stored&nbsp;in&nbsp;the&nbsp;dictionary.</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>DEBUG</strong> = 0<br>
+<strong>DLCS_CONFIG</strong> = '/home/berend/.dlcs-rc'<br>
+<strong>ENCODING</strong> = 'UTF-8'<br>
+<strong>NEW_CONFIG</strong> = False<br>
+<strong>__cmds__</strong> = ['bundle', 'bundleadd', 'bundleremove', 'bundles', 'clearcache', 'deletebundle', 'deleteposts', 'findposts', 'findtags', 'getbundle', 'getposts', 'gettags', 'help', 'info', 'mates', 'post', 'postit', 'posts', 'postsupdate', 'recent', ...]<br>
+<strong>__options__</strong> = [(('-c', '--config'), {'default': '/home/berend/.dlcs-rc', 'help': 'Use custom config file [%default]'}), (('-C', '--keep-cache'), {'action': 'store_true', 'default': False, 'dest': 'keep_cache', 'help': "Don't update locally cached file(s) if they're out of date."}), (('-e', '--encoding'), {'default': 'UTF-8', 'help': 'Use custom character encoding [locale: %default]'}), (('-u', '--username'), {'help': 'del.icio.us username (defaults to config or loginname)'}), (('-p', '--password'), {'help': 'Password for the del.icio.us user (usage not recommended, but this will override the config)'}), (('-I', '--ignore-case'), {'action': 'store_true', 'default': False, 'dest': 'ignore_case', 'help': 'Ignore case for string searches'}), (('-d', '--dump'), {'default': False, 'help': 'Dump entire response (`req` only)'}), (('-o', '--outf'), {'choices': ['text', 'json', 'prettyjson'], 'default': 'text', 'help': 'Output formatting'}), (('-s', '--shared'), {'default': True, 'help': "When posting a URL, set the 'shared' parameter."}), (('-r', '--replace'), {'default': False, 'help': "When posting a URL, set the 'replace' parameter."}), (('-v', '--verboseness'), {'default': 0, 'help': 'TODO: Increase or set DEBUG (defaults to 0 or the DLCS_DEBUG env. var.)'})]<br>
+<strong>__usage__</strong> = '%prog [options] [command] [args...] <font color="#c040c0">\n</font>command can...ommand]` to get more information about a command.'<br>
+<strong>debugindent</strong> = {}<br>
+<strong>debugmidline</strong> = {}</td></tr></table>
+</body></html>

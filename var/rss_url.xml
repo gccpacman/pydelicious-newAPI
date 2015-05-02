@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="http://purl.org/rss/1.0/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://web.resource.org/cc/" xmlns:syn="http://purl.org/rss/1.0/modules/syndication/" xmlns:admin="http://webns.net/mvcb/">
+  <channel rdf:about="http://feeds.delicious.com">
+    <title>Delicious/url/efbfb246d886393d48065551434dab54</title>
+    <link>http://delicious.com/url/efbfb246d886393d48065551434dab54</link>
+    <description>bookmark history for http://deliciouspython.python-hosting.com/</description>
+    <items>
+      <rdf:Seq>
+        <rdf:li rdf:resource="http://deliciouspython.python-hosting.com/"/>
+        <rdf:li rdf:resource="http://deliciouspython.python-hosting.com/"/>
+        <rdf:li rdf:resource="http://deliciouspython.python-hosting.com/"/>
+        <rdf:li rdf:resource="http://deliciouspython.python-hosting.com/"/>
+        <rdf:li rdf:resource="http://deliciouspython.python-hosting.com/"/>
+        <rdf:li rdf:resource="http://deliciouspython.python-hosting.com/"/>
+        <rdf:li rdf:resource="http://deliciouspython.python-hosting.com/"/>
+        <rdf:li rdf:resource="http://deliciouspython.python-hosting.com/"/>
+        <rdf:li rdf:resource="http://deliciouspython.python-hosting.com/"/>
+        <rdf:li rdf:resource="http://deliciouspython.python-hosting.com/"/>
+        <rdf:li rdf:resource="http://deliciouspython.python-hosting.com/"/>
+        <rdf:li rdf:resource="http://deliciouspython.python-hosting.com/"/>
+        <rdf:li rdf:resource="http://deliciouspython.python-hosting.com/"/>
+        <rdf:li rdf:resource="http://deliciouspython.python-hosting.com/"/>
+        <rdf:li rdf:resource="http://deliciouspython.python-hosting.com/"/>
+      </rdf:Seq>
+    </items>
+  </channel>
+  <item rdf:about="http://deliciouspython.python-hosting.com/">
+    <title>[from rfdiaz] delicious python</title>
+    <dc:date>2008-11-04T02:24:08Z</dc:date>
+    <link>http://deliciouspython.python-hosting.com/</link>
+    <dc:creator>rfdiaz</dc:creator>
+    <dc:subject>python programming</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/python"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/programming"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://deliciouspython.python-hosting.com/">
+    <title>[from tcbitdennet] delicious python</title>
+    <dc:date>2008-08-09T05:20:02Z</dc:date>
+    <link>http://deliciouspython.python-hosting.com/</link>
+    <dc:creator>tcbitdennet</dc:creator>
+    <dc:subject>python HacDC api del.icio.us</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/python"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/HacDC"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/api"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/del.icio.us"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://deliciouspython.python-hosting.com/">
+    <title>[from mmartinhr] delicious python</title>
+    <dc:date>2008-03-24T17:56:18Z</dc:date>
+    <link>http://deliciouspython.python-hosting.com/</link>
+    <dc:creator>mmartinhr</dc:creator>
+    <dc:subject>python del.icio.us api programming delicious web</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/python"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/del.icio.us"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/api"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/programming"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/delicious"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/web"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://deliciouspython.python-hosting.com/">
+    <title>[from pzerbinos] 404 Not Found</title>
+    <dc:date>2007-12-13T15:36:20Z</dc:date>
+    <link>http://deliciouspython.python-hosting.com/</link>
+    <dc:creator>pzerbinos</dc:creator>
+    <dc:subject>python not_found test munched</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/python"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/not_found"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/test"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/munched"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://deliciouspython.python-hosting.com/">
+    <title>[from korpios] Delicious Python</title>
+    <dc:date>2007-08-24T02:21:18Z</dc:date>
+    <link>http://deliciouspython.python-hosting.com/</link>
+    <dc:creator>korpios</dc:creator>
+    <dc:subject>delicious python</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/delicious"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/python"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://deliciouspython.python-hosting.com/">
+    <title>[from ishideo] delicious python</title>
+    <dc:date>2007-05-02T11:42:24Z</dc:date>
+    <link>http://deliciouspython.python-hosting.com/</link>
+    <dc:creator>ishideo</dc:creator>
+    <dc:subject>python SBM del.icio.us</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/python"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/SBM"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/del.icio.us"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://deliciouspython.python-hosting.com/">
+    <title>[from studiomaestro] delicious python</title>
+    <dc:date>2007-02-15T18:59:20Z</dc:date>
+    <link>http://deliciouspython.python-hosting.com/</link>
+    <dc:creator>studiomaestro</dc:creator>
+    <dc:subject>del.icio.us python</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/del.icio.us"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/python"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://deliciouspython.python-hosting.com/">
+    <title>[from josu] pydelicious</title>
+    <dc:date>2006-11-28T14:49:12Z</dc:date>
+    <link>http://deliciouspython.python-hosting.com/</link>
+    <dc:creator>josu</dc:creator>
+    <description>Python-eko libreria bat, del.icio.us-eko APIa erabiltzeko</description>
+    <dc:subject>api python delicious</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/api"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/python"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/delicious"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://deliciouspython.python-hosting.com/">
+    <title>[from redawgts] delicious python</title>
+    <dc:date>2006-10-22T23:24:36Z</dc:date>
+    <link>http://deliciouspython.python-hosting.com/</link>
+    <dc:creator>redawgts</dc:creator>
+    <dc:subject>python del.icio.us api programming</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/python"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/del.icio.us"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/api"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/programming"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://deliciouspython.python-hosting.com/">
+    <title>[from yyo] delicious python</title>
+    <dc:date>2006-10-02T20:45:31Z</dc:date>
+    <link>http://deliciouspython.python-hosting.com/</link>
+    <dc:creator>yyo</dc:creator>
+    <dc:subject>del.icio.us programming Python</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/del.icio.us"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/programming"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/Python"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://deliciouspython.python-hosting.com/">
+    <title>[from yuanliangliu] delicious python</title>
+    <dc:date>2006-08-31T21:52:10Z</dc:date>
+    <link>http://deliciouspython.python-hosting.com/</link>
+    <dc:creator>yuanliangliu</dc:creator>
+    <dc:subject>python del.icio.us</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/python"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/del.icio.us"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://deliciouspython.python-hosting.com/">
+    <title>[from fullyionized] delicious python</title>
+    <dc:date>2006-08-31T05:03:37Z</dc:date>
+    <link>http://deliciouspython.python-hosting.com/</link>
+    <dc:creator>fullyionized</dc:creator>
+    <dc:subject>delicious python</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/delicious"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/python"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://deliciouspython.python-hosting.com/">
+    <title>[from mort] pydelicious</title>
+    <dc:date>2006-08-30T18:06:31Z</dc:date>
+    <link>http://deliciouspython.python-hosting.com/</link>
+    <dc:creator>mort</dc:creator>
+    <description>pydelicious allows you to access the web service of del.icio.us via it&amp;#039;s API through python.</description>
+    <dc:subject>python del.icio.us api rest</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/python"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/del.icio.us"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/api"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/rest"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://deliciouspython.python-hosting.com/">
+    <title>[from perv] delicious python</title>
+    <dc:date>2006-08-28T04:19:47Z</dc:date>
+    <link>http://deliciouspython.python-hosting.com/</link>
+    <dc:creator>perv</dc:creator>
+    <description>pydelicious allows you to access the web service of del.icio.us via it&amp;#039;s API through python.</description>
+    <dc:subject>del.icio.us Python scripting bookmarks api</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/del.icio.us"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/Python"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/scripting"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/bookmarks"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/api"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://deliciouspython.python-hosting.com/">
+    <title>[from razzmataz] delicious python</title>
+    <dc:date>2006-08-21T18:07:34Z</dc:date>
+    <link>http://deliciouspython.python-hosting.com/</link>
+    <dc:creator>razzmataz</dc:creator>
+    <dc:subject>python programming delicious</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/python"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/programming"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/delicious"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+</rdf:RDF>

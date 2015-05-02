@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="http://purl.org/rss/1.0/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://web.resource.org/cc/" xmlns:syn="http://purl.org/rss/1.0/modules/syndication/" xmlns:admin="http://webns.net/mvcb/">
+  <channel rdf:about="http://feeds.delicious.com">
+    <title>Delicious/tag/python</title>
+    <link>http://delicious.com/tag/python</link>
+    <description>recent bookmarks tagged python</description>
+    <items>
+      <rdf:Seq>
+        <rdf:li rdf:resource="http://diveinto.python.ru/toc.html"/>
+        <rdf:li rdf:resource="http://code.google.com/p/s3funnel/"/>
+        <rdf:li rdf:resource="http://pyjs.org/"/>
+        <rdf:li rdf:resource="http://www.python-eggs.org/"/>
+        <rdf:li rdf:resource="http://en.wikibooks.org/wiki/Non-Programmer%27s_Tutorial_for_Python"/>
+        <rdf:li rdf:resource="http://www.corepy.org/"/>
+        <rdf:li rdf:resource="http://pyjs.org/book/output/Bookreader.html"/>
+        <rdf:li rdf:resource="http://pyjs.org/"/>
+        <rdf:li rdf:resource="http://www.swaroopch.com/notes/Python_en:Table_of_Contents"/>
+        <rdf:li rdf:resource="http://peak.telecommunity.com/DevCenter/Trellis"/>
+        <rdf:li rdf:resource="http://www.stackless.com/"/>
+        <rdf:li rdf:resource="http://thomas.broxrost.com/"/>
+        <rdf:li rdf:resource="http://www.cs.berkeley.edu/~billm/memoize.html"/>
+        <rdf:li rdf:resource="http://www-128.ibm.com/developerworks/linux/library/l-django/index.html"/>
+        <rdf:li rdf:resource="http://lukeplant.me.uk/blog.php?id=1107301641"/>
+      </rdf:Seq>
+    </items>
+  </channel>
+  <item rdf:about="http://diveinto.python.ru/toc.html">
+    <title>В глубь языка Python</title>
+    <dc:date>2008-11-28T20:07:54Z</dc:date>
+    <link>http://diveinto.python.ru/toc.html</link>
+    <dc:creator>akuzminich</dc:creator>
+    <dc:subject>python</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/python"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://code.google.com/p/s3funnel/">
+    <title>s3funnel - Google Code</title>
+    <dc:date>2008-11-28T20:06:02Z</dc:date>
+    <link>http://code.google.com/p/s3funnel/</link>
+    <dc:creator>shazow</dc:creator>
+    <dc:subject>python api storage amazon s3</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/python"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/api"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/storage"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/amazon"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/s3"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://pyjs.org/">
+    <title>pyjamas</title>
+    <dc:date>2008-11-28T20:04:54Z</dc:date>
+    <link>http://pyjs.org/</link>
+    <dc:creator>kesler</dc:creator>
+    <dc:subject>python gwt pyjamas js webapps toolkit widgets ajax web javascript CodeGenerator</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/python"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/gwt"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/pyjamas"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/js"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/webapps"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/toolkit"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/widgets"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/ajax"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/web"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/javascript"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/CodeGenerator"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://www.python-eggs.org/">
+    <title>Python Eggs</title>
+    <dc:date>2008-11-28T19:55:51Z</dc:date>
+    <link>http://www.python-eggs.org/</link>
+    <dc:creator>aristotle831</dc:creator>
+    <dc:subject>software reference python programming resources</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/software"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/reference"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/python"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/programming"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/resources"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://en.wikibooks.org/wiki/Non-Programmer%27s_Tutorial_for_Python">
+    <title>Non-Programmer's Tutorial for Python - Wikibooks, collection of open-content textbooks</title>
+    <dc:date>2008-11-28T19:54:56Z</dc:date>
+    <link>http://en.wikibooks.org/wiki/Non-Programmer%27s_Tutorial_for_Python</link>
+    <dc:creator>chennb</dc:creator>
+    <dc:subject>tutorial wiki python</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/tutorial"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/wiki"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/python"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://www.corepy.org/">
+    <title>C o r e P y : Synthetic Programming in Python</title>
+    <dc:date>2008-11-28T19:53:46Z</dc:date>
+    <link>http://www.corepy.org/</link>
+    <dc:creator>jefegorgori</dc:creator>
+    <description>CorePy is a Python package for developing assembly-level applications on x86, Cell BE and PowerPC processors. Its simple APIs enable the creation of complex, high-performance applications that take advantage of advanced processor features, including multiple cores and vector instruction sets (SSE, VMX, SPU), usually inaccessible from high-level languages.</description>
+    <dc:subject>programming python development api assembly asm assembler x86</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/programming"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/python"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/development"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/api"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/assembly"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/asm"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/assembler"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/x86"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://pyjs.org/book/output/Bookreader.html">
+    <title>Pyjamas Book</title>
+    <dc:date>2008-11-28T19:53:10Z</dc:date>
+    <link>http://pyjs.org/book/output/Bookreader.html</link>
+    <dc:creator>eddie.welker</dc:creator>
+    <dc:subject>python pyjamas javascript</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/python"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/pyjamas"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/javascript"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://pyjs.org/">
+    <title>pyjamas</title>
+    <dc:date>2008-11-28T19:52:14Z</dc:date>
+    <link>http://pyjs.org/</link>
+    <dc:creator>eddie.welker</dc:creator>
+    <dc:subject>webdev python pyjamas programming js javascript</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/webdev"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/python"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/pyjamas"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/programming"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/js"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/javascript"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://www.swaroopch.com/notes/Python_en:Table_of_Contents">
+    <title>Python en:Table of Contents - Notes</title>
+    <dc:date>2008-11-28T19:52:12Z</dc:date>
+    <link>http://www.swaroopch.com/notes/Python_en:Table_of_Contents</link>
+    <dc:creator>efavrebulle</dc:creator>
+    <dc:subject>python</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/python"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://peak.telecommunity.com/DevCenter/Trellis">
+    <title>Trellis - The PEAK Developers' Center</title>
+    <dc:date>2008-11-28T19:51:56Z</dc:date>
+    <link>http://peak.telecommunity.com/DevCenter/Trellis</link>
+    <dc:creator>alazarchuk</dc:creator>
+    <dc:subject>tutorial python programming library framework trellis</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/tutorial"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/python"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/programming"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/library"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/framework"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/trellis"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://www.stackless.com/">
+    <title>Stackless.com - About Stackless</title>
+    <dc:date>2008-11-28T19:51:51Z</dc:date>
+    <link>http://www.stackless.com/</link>
+    <dc:creator>mcdonald5</dc:creator>
+    <dc:subject>tools scripting python scalability programming</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/tools"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/scripting"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/python"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/scalability"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/programming"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://thomas.broxrost.com/">
+    <title>Thomas Brox Røst</title>
+    <dc:date>2008-11-28T19:51:24Z</dc:date>
+    <link>http://thomas.broxrost.com/</link>
+    <dc:creator>stuartkm</dc:creator>
+    <dc:subject>python django</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/python"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/django"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://www.cs.berkeley.edu/~billm/memoize.html">
+    <title>memoize - A replacement for make</title>
+    <dc:date>2008-11-28T19:50:04Z</dc:date>
+    <link>http://www.cs.berkeley.edu/~billm/memoize.html</link>
+    <dc:creator>aguignard</dc:creator>
+    <dc:subject>python linux programming make</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/python"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/linux"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/programming"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/make"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://www-128.ibm.com/developerworks/linux/library/l-django/index.html">
+    <title>Python Web frameworks, Part 1: Develop for the Web with Django and Python</title>
+    <dc:date>2008-11-28T19:48:52Z</dc:date>
+    <link>http://www-128.ibm.com/developerworks/linux/library/l-django/index.html</link>
+    <dc:creator>cazcarate</dc:creator>
+    <dc:subject>django python programming tutorial</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/django"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/python"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/programming"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/tutorial"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://lukeplant.me.uk/blog.php?id=1107301641">
+    <title>A Django website that took (a lot) more than 20 minutes.</title>
+    <dc:date>2008-11-28T19:48:23Z</dc:date>
+    <link>http://lukeplant.me.uk/blog.php?id=1107301641</link>
+    <dc:creator>cazcarate</dc:creator>
+    <dc:subject>django python programming</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/django"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/python"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/programming"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+</rdf:RDF>

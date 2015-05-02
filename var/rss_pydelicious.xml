@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="http://purl.org/rss/1.0/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://web.resource.org/cc/" xmlns:syn="http://purl.org/rss/1.0/modules/syndication/" xmlns:admin="http://webns.net/mvcb/">
+  <channel rdf:about="http://feeds.delicious.com">
+    <title>Delicious/pydelicious</title>
+    <link>http://delicious.com/pydelicious</link>
+    <description>bookmarks posted by pydelicious</description>
+    <items>
+      <rdf:Seq>
+        <rdf:li rdf:resource="http://www.testurl.de/"/>
+        <rdf:li rdf:resource="http://365800.de/"/>
+        <rdf:li rdf:resource="http://www.eleganthack.com/"/>
+        <rdf:li rdf:resource="http://www.bianca-hein.de/"/>
+        <rdf:li rdf:resource="http://www.universes-in-universe.de/islam/deu/index.html"/>
+        <rdf:li rdf:resource="http://www.gretaflohe.de/"/>
+        <rdf:li rdf:resource="http://www.frau-holle.com/"/>
+        <rdf:li rdf:resource="http://www.putzundmunter.de/"/>
+        <rdf:li rdf:resource="http://www.sigrun-bischoff-kaufmann.de/"/>
+        <rdf:li rdf:resource="http://www.evakaiser.com/de/de_index.html"/>
+        <rdf:li rdf:resource="http://www.cenci.de/"/>
+        <rdf:li rdf:resource="http://www.barbarameisner.de/"/>
+        <rdf:li rdf:resource="http://www.barbara-ehrmann.de/galerie1.htm"/>
+        <rdf:li rdf:resource="http://www.verasimon.de/"/>
+        <rdf:li rdf:resource="http://www.meinekunst.net/"/>
+      </rdf:Seq>
+    </items>
+  </channel>
+  <item rdf:about="http://www.testurl.de/">
+    <title>description</title>
+    <dc:date>2006-05-26T13:53:39Z</dc:date>
+    <link>http://www.testurl.de/</link>
+    <dc:creator>pydelicious</dc:creator>
+    <dc:subject>täg tag tuck</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/pydelicious/t%C3%A4g"/>
+        <rdf:li rdf:resource="http://delicious.com/pydelicious/tag"/>
+        <rdf:li rdf:resource="http://delicious.com/pydelicious/tuck"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://365800.de/">
+    <title>desc</title>
+    <dc:date>2006-04-10T15:32:44Z</dc:date>
+    <link>http://365800.de/</link>
+    <dc:creator>pydelicious</dc:creator>
+    <dc:subject>640</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/pydelicious/640"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://www.eleganthack.com/">
+    <title>Information architecture, usability and interaction design issues, plus the odd thought</title>
+    <dc:date>2006-03-12T23:20:17Z</dc:date>
+    <link>http://www.eleganthack.com/</link>
+    <dc:creator>pydelicious</dc:creator>
+    <dc:subject>nati.web</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/pydelicious/nati.web"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://www.bianca-hein.de/">
+    <title>Bianca Hein :: Offizielle Homepage</title>
+    <dc:date>2006-03-12T23:07:01Z</dc:date>
+    <link>http://www.bianca-hein.de/</link>
+    <dc:creator>pydelicious</dc:creator>
+    <dc:subject>nati.web</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/pydelicious/nati.web"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://www.universes-in-universe.de/islam/deu/index.html">
+    <title>Aktuelle Kunst aus der islamischen Welt. Online-Magazin</title>
+    <dc:date>2006-03-12T23:04:36Z</dc:date>
+    <link>http://www.universes-in-universe.de/islam/deu/index.html</link>
+    <dc:creator>pydelicious</dc:creator>
+    <dc:subject>nati.web</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/pydelicious/nati.web"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://www.gretaflohe.de/">
+    <title>Homepage</title>
+    <dc:date>2006-03-12T22:55:34Z</dc:date>
+    <link>http://www.gretaflohe.de/</link>
+    <dc:creator>pydelicious</dc:creator>
+    <dc:subject>nati.web</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/pydelicious/nati.web"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://www.frau-holle.com/">
+    <title>FRAU HOLLE: HOME</title>
+    <dc:date>2006-03-12T22:55:23Z</dc:date>
+    <link>http://www.frau-holle.com/</link>
+    <dc:creator>pydelicious</dc:creator>
+    <dc:subject>nati.web</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/pydelicious/nati.web"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://www.putzundmunter.de/">
+    <title>PUTZ&amp;munter - Karen Betty Tobias</title>
+    <dc:date>2006-03-12T22:47:29Z</dc:date>
+    <link>http://www.putzundmunter.de/</link>
+    <dc:creator>pydelicious</dc:creator>
+    <dc:subject>www.putzundmunter.de</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/pydelicious/www.putzundmunter.de"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://www.sigrun-bischoff-kaufmann.de/">
+    <title>Die Kuenstlerin Sigrun Bischoff-Kaufmann</title>
+    <dc:date>2006-03-12T22:47:14Z</dc:date>
+    <link>http://www.sigrun-bischoff-kaufmann.de/</link>
+    <dc:creator>pydelicious</dc:creator>
+    <dc:subject>www.putzundmunter.de</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/pydelicious/www.putzundmunter.de"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://www.evakaiser.com/de/de_index.html">
+    <title>Eva Kaiser - eine Künstlerin stellt sich vor</title>
+    <dc:date>2006-03-12T22:47:07Z</dc:date>
+    <link>http://www.evakaiser.com/de/de_index.html</link>
+    <dc:creator>pydelicious</dc:creator>
+    <dc:subject>www.putzundmunter.de</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/pydelicious/www.putzundmunter.de"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://www.cenci.de/">
+    <title>Kunst Cenci Goepel Hamburg</title>
+    <dc:date>2006-03-12T22:47:01Z</dc:date>
+    <link>http://www.cenci.de/</link>
+    <dc:creator>pydelicious</dc:creator>
+    <dc:subject>www.putzundmunter.de</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/pydelicious/www.putzundmunter.de"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://www.barbarameisner.de/">
+    <title>Barbara Meisner, Düsseldorfer Künstlerin</title>
+    <dc:date>2006-03-12T22:46:55Z</dc:date>
+    <link>http://www.barbarameisner.de/</link>
+    <dc:creator>pydelicious</dc:creator>
+    <dc:subject>www.putzundmunter.de</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/pydelicious/www.putzundmunter.de"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://www.barbara-ehrmann.de/galerie1.htm">
+    <title>Barbara Ehrmann Pastell Kreide Kohle Malerei und Zeichnungen Bodensee Allgäu Oberschwaben</title>
+    <dc:date>2006-03-12T22:10:30Z</dc:date>
+    <link>http://www.barbara-ehrmann.de/galerie1.htm</link>
+    <dc:creator>pydelicious</dc:creator>
+    <dc:subject>nati.web</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/pydelicious/nati.web"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://www.verasimon.de/">
+    <title>Vera Simon - DesignPage</title>
+    <dc:date>2006-03-12T22:05:53Z</dc:date>
+    <link>http://www.verasimon.de/</link>
+    <dc:creator>pydelicious</dc:creator>
+    <dc:subject>nati.web</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/pydelicious/nati.web"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://www.meinekunst.net/">
+    <title>MeineKunst.net</title>
+    <dc:date>2006-03-12T21:57:31Z</dc:date>
+    <link>http://www.meinekunst.net/</link>
+    <dc:creator>pydelicious</dc:creator>
+    <dc:subject>nati.web</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/pydelicious/nati.web"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+</rdf:RDF>

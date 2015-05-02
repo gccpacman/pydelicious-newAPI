@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="http://purl.org/rss/1.0/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://web.resource.org/cc/" xmlns:syn="http://purl.org/rss/1.0/modules/syndication/" xmlns:admin="http://webns.net/mvcb/">
+  <channel rdf:about="http://feeds.delicious.com">
+    <title>Delicious popular</title>
+    <link>http://delicious.com/popular</link>
+    <description>the latest popular bookmarks</description>
+    <items>
+      <rdf:Seq>
+        <rdf:li rdf:resource="http://www.makeuseof.com/tag/email-to-sms/"/>
+        <rdf:li rdf:resource="http://crazeegeekchick.com/blog/27-free-must-have-online-collaboration-tools/"/>
+        <rdf:li rdf:resource="http://goingtorain.com/"/>
+        <rdf:li rdf:resource="http://www.toxel.com/design/2008/11/26/24-beautiful-and-creative-website-headers/"/>
+        <rdf:li rdf:resource="http://www.abduzeedo.com/29-great-free-textures"/>
+        <rdf:li rdf:resource="http://livelabs.com/seadragon-ajax/"/>
+        <rdf:li rdf:resource="http://www.techradar.com/news/internet/web/esssential-free-apps-for-your-web-design-toolkit-485214?src=rss&amp;attr=all"/>
+        <rdf:li rdf:resource="http://www.nydailynews.com/ny_local/2008/11/28/2008-11-28_worker_dies_at_long_island_walmart_after.html"/>
+        <rdf:li rdf:resource="http://advogato.org/article/993.html"/>
+        <rdf:li rdf:resource="http://www.the-digital-picture.com/Canon-Lenses/Where-To-Buy-Used-Canon-Lenses.aspx"/>
+        <rdf:li rdf:resource="http://mashable.com/2008/11/28/how-to-convert-your-blog-into-a-podcast-on-itunes-for-free/"/>
+        <rdf:li rdf:resource="http://maketecheasier.com/10-of-the-best-linux-desktop-customization-screenshots-to-inspire-your-creativity/2008/11/28"/>
+        <rdf:li rdf:resource="http://logooftheday.com/"/>
+        <rdf:li rdf:resource="http://www.boston.com/bigpicture/2008/11/mumbai_under_attack.html"/>
+        <rdf:li rdf:resource="http://drawminos.com/"/>
+      </rdf:Seq>
+    </items>
+  </channel>
+  <item rdf:about="http://www.makeuseof.com/tag/email-to-sms/">
+    <title>How To Send Email To Any Cell Phone (for Free) | MakeUseOf.com</title>
+    <dc:date>2008-11-28T00:34:56Z</dc:date>
+    <link>http://www.makeuseof.com/tag/email-to-sms/</link>
+    <dc:creator>pr1ncess73</dc:creator>
+    <dc:subject>email sms phone mobile texting tools text howto cellphone reference</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/email"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/sms"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/phone"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/mobile"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/texting"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/tools"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/text"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/howto"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/cellphone"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/reference"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://crazeegeekchick.com/blog/27-free-must-have-online-collaboration-tools/">
+    <title>27 Free Must-have Online Collaboration Tools : Crazeegeekchick.com</title>
+    <dc:date>2008-11-26T18:59:46Z</dc:date>
+    <link>http://crazeegeekchick.com/blog/27-free-must-have-online-collaboration-tools/</link>
+    <dc:creator>atlnav</dc:creator>
+    <dc:subject>collaboration tools web2.0 webtools online whiteboard web productivity software tips</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/collaboration"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/tools"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/web2.0"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/webtools"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/online"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/whiteboard"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/web"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/productivity"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/software"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/tips"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://goingtorain.com/">
+    <title>is it going to rain?</title>
+    <dc:date>2008-05-23T01:06:00Z</dc:date>
+    <link>http://goingtorain.com/</link>
+    <dc:creator>jcs</dc:creator>
+    <dc:subject>weather rain web2.0 web tool useful simple webdesign tools reference</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/weather"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/rain"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/web2.0"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/web"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/tool"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/useful"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/simple"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/webdesign"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/tools"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/reference"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://www.toxel.com/design/2008/11/26/24-beautiful-and-creative-website-headers/">
+    <title>Toxel.com » 24 Beautiful and Creative Website Headers</title>
+    <dc:date>2008-11-27T05:15:18Z</dc:date>
+    <link>http://www.toxel.com/design/2008/11/26/24-beautiful-and-creative-website-headers/</link>
+    <dc:creator>pramodc84</dc:creator>
+    <dc:subject>webdesign inspiration design website template websites web webdev resources header</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/webdesign"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/inspiration"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/design"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/website"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/template"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/websites"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/web"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/webdev"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/resources"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/header"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://www.abduzeedo.com/29-great-free-textures">
+    <title>29 Great Free Textures | Abduzeedo - design inspiration &amp; tutorials</title>
+    <dc:date>2008-11-26T14:39:45Z</dc:date>
+    <link>http://www.abduzeedo.com/29-great-free-textures</link>
+    <dc:creator>goofydg1</dc:creator>
+    <dc:subject>textures webdesign texture resources photoshop wallpaper web design free background</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/textures"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/webdesign"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/texture"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/resources"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/photoshop"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/wallpaper"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/web"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/design"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/free"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/background"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://livelabs.com/seadragon-ajax/">
+    <title>Seadragon Ajax : Microsoft Live Labs</title>
+    <dc:date>2008-11-18T23:54:57Z</dc:date>
+    <link>http://livelabs.com/seadragon-ajax/</link>
+    <dc:creator>gasienica</dc:creator>
+    <dc:subject>ajax javascript zoom microsoft seadragon visualization silverlight deepzoom webdesign webdev</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/ajax"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/javascript"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/zoom"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/microsoft"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/seadragon"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/visualization"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/silverlight"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/deepzoom"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/webdesign"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/webdev"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://www.techradar.com/news/internet/web/esssential-free-apps-for-your-web-design-toolkit-485214?src=rss&amp;amp;attr=all">
+    <title>Essential free apps for your web design toolkit | News | TechRadar UK</title>
+    <dc:date>2008-11-27T17:13:43Z</dc:date>
+    <link>http://www.techradar.com/news/internet/web/esssential-free-apps-for-your-web-design-toolkit-485214?src=rss&amp;attr=all</link>
+    <dc:creator>joe4924</dc:creator>
+    <dc:subject>tools web webdesign design webdev free source opensource toolkit freeware</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/tools"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/web"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/webdesign"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/design"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/webdev"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/free"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/source"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/opensource"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/toolkit"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/freeware"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://www.nydailynews.com/ny_local/2008/11/28/2008-11-28_worker_dies_at_long_island_walmart_after.html">
+    <title>Worker dies at Long Island Wal-Mart after being trampled in Black Friday stampede</title>
+    <dc:date>2008-11-28T15:03:49Z</dc:date>
+    <link>http://www.nydailynews.com/ny_local/2008/11/28/2008-11-28_worker_dies_at_long_island_walmart_after.html</link>
+    <dc:creator>ecgwesley</dc:creator>
+    <dc:subject>news consumerism walmart society america death tv recession media blackfriday</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/news"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/consumerism"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/walmart"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/society"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/america"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/death"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/tv"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/recession"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/media"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/blackfriday"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://advogato.org/article/993.html">
+    <title>Advogato: Blurring of MVC lines: Programming the Web Browser.</title>
+    <dc:date>2008-11-27T19:53:18Z</dc:date>
+    <link>http://advogato.org/article/993.html</link>
+    <dc:creator>bearontheroof</dc:creator>
+    <dc:subject>mvc javascript programming ajax framework html webdev gwt web pyjamas</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/mvc"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/javascript"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/programming"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/ajax"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/framework"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/html"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/webdev"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/gwt"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/web"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/pyjamas"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://www.the-digital-picture.com/Canon-Lenses/Where-To-Buy-Used-Canon-Lenses.aspx">
+    <title>Where to Buy Used Canon Lenses</title>
+    <dc:date>2005-06-21T21:43:43Z</dc:date>
+    <link>http://www.the-digital-picture.com/Canon-Lenses/Where-To-Buy-Used-Canon-Lenses.aspx</link>
+    <dc:creator>aerique</dc:creator>
+    <dc:subject>photography canon used shopping lenses camera lens photo equipment resources</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/photography"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/canon"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/used"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/shopping"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/lenses"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/camera"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/lens"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/photo"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/equipment"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/resources"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://mashable.com/2008/11/28/how-to-convert-your-blog-into-a-podcast-on-itunes-for-free/">
+    <title>HOW TO: Convert Your Blog Into a Podcast on iTunes for Free</title>
+    <dc:date>2008-11-28T17:08:13Z</dc:date>
+    <link>http://mashable.com/2008/11/28/how-to-convert-your-blog-into-a-podcast-on-itunes-for-free/</link>
+    <dc:creator>quiverandquill</dc:creator>
+    <dc:subject>blog podcast podcasting tools itunes blogging web2.0 blogs tips tool</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/blog"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/podcast"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/podcasting"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/tools"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/itunes"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/blogging"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/web2.0"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/blogs"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/tips"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/tool"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://maketecheasier.com/10-of-the-best-linux-desktop-customization-screenshots-to-inspire-your-creativity/2008/11/28">
+    <title>10 Of The Best Linux Desktop Customization Screenshots To Inspire Your Creativity - Make Tech Easier</title>
+    <dc:date>2008-11-28T00:46:41Z</dc:date>
+    <link>http://maketecheasier.com/10-of-the-best-linux-desktop-customization-screenshots-to-inspire-your-creativity/2008/11/28</link>
+    <dc:creator>bascht</dc:creator>
+    <dc:subject>linux ubuntu desktop customization unix gnome creativity theme lists custom</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/linux"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/ubuntu"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/desktop"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/customization"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/unix"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/gnome"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/creativity"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/theme"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/lists"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/custom"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://logooftheday.com/">
+    <title>Logo Of The Day - Logo Design Inspiration, Gallery &amp; Award Scheme!</title>
+    <dc:date>2008-11-19T06:56:48Z</dc:date>
+    <link>http://logooftheday.com/</link>
+    <dc:creator>theskullcave</dc:creator>
+    <dc:subject>inspiration logos logo design resources webdesign gallery reference logotype art</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/inspiration"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/logos"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/logo"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/design"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/resources"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/webdesign"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/gallery"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/reference"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/logotype"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/art"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://www.boston.com/bigpicture/2008/11/mumbai_under_attack.html">
+    <title>Mumbai under attack - The Big Picture - Boston.com</title>
+    <dc:date>2008-11-28T16:58:17Z</dc:date>
+    <link>http://www.boston.com/bigpicture/2008/11/mumbai_under_attack.html</link>
+    <dc:creator>3rdparty</dc:creator>
+    <dc:subject>terrorism photography mumbai news photos photojournalism india politics attack bigpicture</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/terrorism"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/photography"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/mumbai"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/news"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/photos"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/photojournalism"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/india"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/politics"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/attack"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/bigpicture"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+  <item rdf:about="http://drawminos.com/">
+    <title>DRAWMINOS</title>
+    <dc:date>2008-11-27T06:45:58Z</dc:date>
+    <link>http://drawminos.com/</link>
+    <dc:creator>lightbookmark</dc:creator>
+    <dc:subject>games flash fun game domino dominos design cool web drawminos</dc:subject>
+    <taxo:topics>
+      <rdf:Bag>
+        <rdf:li rdf:resource="http://delicious.com/tag/games"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/flash"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/fun"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/game"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/domino"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/dominos"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/design"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/cool"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/web"/>
+        <rdf:li rdf:resource="http://delicious.com/tag/drawminos"/>
+      </rdf:Bag>
+    </taxo:topics>
+  </item>
+</rdf:RDF>

@@ -1,0 +1,773 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module __init__</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>__init__</strong></big></big> (version 0.6)</font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/berend/project/pydelicious/trunk/pydelicious/__init__.py">/home/berend/project/pydelicious/trunk/pydelicious/__init__.py</a></font></td></tr></table>
+    <p><tt>Library&nbsp;to&nbsp;access&nbsp;del.icio.us&nbsp;data&nbsp;via&nbsp;Python.<br>
+&nbsp;<br>
+An&nbsp;introduction&nbsp;to&nbsp;the&nbsp;project&nbsp;is&nbsp;given&nbsp;in&nbsp;the&nbsp;README.<br>
+&nbsp;<br>
+pydelicious&nbsp;is&nbsp;released&nbsp;under&nbsp;the&nbsp;FreeBSD&nbsp;License.&nbsp;<br>
+See&nbsp;license.txt&nbsp;for&nbsp;details&nbsp;and&nbsp;the&nbsp;copyright&nbsp;holders.<br>
+&nbsp;<br>
+THIS&nbsp;SOFTWARE&nbsp;IS&nbsp;PROVIDED&nbsp;BY&nbsp;THE&nbsp;COPYRIGHT&nbsp;HOLDERS&nbsp;AND&nbsp;CONTRIBUTORS&nbsp;"AS&nbsp;IS"&nbsp;AND<br>
+ANY&nbsp;EXPRESS&nbsp;OR&nbsp;IMPLIED&nbsp;WARRANTIES,&nbsp;INCLUDING,&nbsp;BUT&nbsp;NOT&nbsp;LIMITED&nbsp;TO,&nbsp;THE&nbsp;IMPLIED<br>
+WARRANTIES&nbsp;OF&nbsp;MERCHANTABILITY&nbsp;AND&nbsp;FITNESS&nbsp;FOR&nbsp;A&nbsp;PARTICULAR&nbsp;PURPOSE&nbsp;ARE<br>
+DISCLAIMED.&nbsp;IN&nbsp;NO&nbsp;EVENT&nbsp;SHALL&nbsp;THE&nbsp;COPYRIGHT&nbsp;OWNER&nbsp;OR&nbsp;CONTRIBUTORS&nbsp;BE&nbsp;LIABLE&nbsp;FOR<br>
+ANY&nbsp;DIRECT,&nbsp;INDIRECT,&nbsp;INCIDENTAL,&nbsp;SPECIAL,&nbsp;EXEMPLARY,&nbsp;OR&nbsp;CONSEQUENTIAL&nbsp;DAMAGES<br>
+(INCLUDING,&nbsp;BUT&nbsp;NOT&nbsp;LIMITED&nbsp;TO,&nbsp;PROCUREMENT&nbsp;OF&nbsp;SUBSTITUTE&nbsp;GOODS&nbsp;OR&nbsp;SERVICES;<br>
+LOSS&nbsp;OF&nbsp;USE,&nbsp;DATA,&nbsp;OR&nbsp;PROFITS;&nbsp;OR&nbsp;BUSINESS&nbsp;INTERRUPTION)&nbsp;HOWEVER&nbsp;CAUSED&nbsp;AND&nbsp;ON<br>
+ANY&nbsp;THEORY&nbsp;OF&nbsp;LIABILITY,&nbsp;WHETHER&nbsp;IN&nbsp;CONTRACT,&nbsp;STRICT&nbsp;LIABILITY,&nbsp;OR&nbsp;TORT<br>
+(INCLUDING&nbsp;NEGLIGENCE&nbsp;OR&nbsp;OTHERWISE)&nbsp;ARISING&nbsp;IN&nbsp;ANY&nbsp;WAY&nbsp;OUT&nbsp;OF&nbsp;THE&nbsp;USE&nbsp;OF&nbsp;THIS<br>
+SOFTWARE,&nbsp;EVEN&nbsp;IF&nbsp;ADVISED&nbsp;OF&nbsp;THE&nbsp;POSSIBILITY&nbsp;OF&nbsp;SUCH&nbsp;DAMAGE.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="datetime.html">datetime</a><br>
+<a href="feedparser.html">feedparser</a><br>
+<a href="httplib.html">httplib</a><br>
+</td><td width="25%" valign=top><a href="locale.html">locale</a><br>
+<a href="os.html">os</a><br>
+<a href="socket.html">socket</a><br>
+</td><td width="25%" valign=top><a href="sys.html">sys</a><br>
+<a href="time.html">time</a><br>
+<a href="urllib2.html">urllib2</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="__init__.html#DeliciousAPI">DeliciousAPI</a>
+</font></dt><dt><font face="helvetica, arial"><a href="exceptions.html#Exception">exceptions.Exception</a>(<a href="exceptions.html#BaseException">exceptions.BaseException</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="__init__.html#DeliciousError">DeliciousError</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="__init__.html#DeliciousItemExistsError">DeliciousItemExistsError</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="__init__.html#PyDeliciousException">PyDeliciousException</a>
+</font></dt><dt><font face="helvetica, arial"><a href="__init__.html#PyDeliciousThrottled">PyDeliciousThrottled</a>
+</font></dt><dt><font face="helvetica, arial"><a href="__init__.html#PyDeliciousUnauthorized">PyDeliciousUnauthorized</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="urllib2.html#HTTPDefaultErrorHandler">urllib2.HTTPDefaultErrorHandler</a>(<a href="urllib2.html#BaseHandler">urllib2.BaseHandler</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="__init__.html#DeliciousHTTPErrorHandler">DeliciousHTTPErrorHandler</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="DeliciousAPI">class <strong>DeliciousAPI</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;single-user&nbsp;Python&nbsp;facade&nbsp;to&nbsp;the&nbsp;del.icio.us&nbsp;HTTP&nbsp;API.<br>
+&nbsp;<br>
+See&nbsp;<a href="http://delicious.com/help/api">http://delicious.com/help/api</a>.<br>
+&nbsp;<br>
+Methods&nbsp;``request``&nbsp;and&nbsp;``request_raw``&nbsp;represent&nbsp;the&nbsp;core.&nbsp;For&nbsp;all&nbsp;API<br>
+paths&nbsp;there&nbsp;are&nbsp;furthermore&nbsp;methods&nbsp;(e.g.&nbsp;posts_add&nbsp;for&nbsp;'posts/all')&nbsp;with<br>
+an&nbsp;explicit&nbsp;declaration&nbsp;of&nbsp;parameters&nbsp;and&nbsp;documentation.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="DeliciousAPI-__init__"><strong>__init__</strong></a>(self, user, passwd, codec<font color="#909090">='UTF-8'</font>, api_request<font color="#909090">=&lt;function dlcs_api_request&gt;</font>, xml_parser<font color="#909090">=&lt;function dlcs_parse_xml&gt;</font>, build_opener<font color="#909090">=&lt;function dlcs_api_opener&gt;</font>, encode_params<font color="#909090">=&lt;function dlcs_encode_params&gt;</font>, encoded<font color="#909090">=False</font>)</dt><dd><tt>Initialize&nbsp;access&nbsp;to&nbsp;the&nbsp;API&nbsp;for&nbsp;``user``&nbsp;with&nbsp;``passwd``.<br>
+&nbsp;<br>
+``codec``&nbsp;sets&nbsp;the&nbsp;encoding&nbsp;of&nbsp;the&nbsp;arguments,&nbsp;which&nbsp;defaults&nbsp;to&nbsp;the<br>
+users&nbsp;preferred&nbsp;locale.<br>
+&nbsp;<br>
+The&nbsp;``api_request``&nbsp;and&nbsp;``xml_parser``&nbsp;parameters&nbsp;by&nbsp;default&nbsp;point&nbsp;to<br>
+functions&nbsp;within&nbsp;this&nbsp;package&nbsp;with&nbsp;standard&nbsp;implementations&nbsp;which<br>
+request&nbsp;and&nbsp;parse&nbsp;a&nbsp;resource.&nbsp;See&nbsp;``<a href="#-dlcs_api_request">dlcs_api_request</a>()``&nbsp;and<br>
+``<a href="#-dlcs_parse_xml">dlcs_parse_xml</a>()``.<br>
+&nbsp;<br>
+Parameter&nbsp;``build_opener``&nbsp;is&nbsp;a&nbsp;callable&nbsp;that,&nbsp;provided&nbsp;with&nbsp;the&nbsp;<br>
+credentials,&nbsp;should&nbsp;build&nbsp;a&nbsp;urllib2&nbsp;opener&nbsp;for&nbsp;the&nbsp;delicious&nbsp;API&nbsp;server<br>
+with&nbsp;HTTP&nbsp;authentication.&nbsp;See&nbsp;``<a href="#-dlcs_api_opener">dlcs_api_opener</a>()``&nbsp;for&nbsp;the&nbsp;default<br>
+implementation.<br>
+&nbsp;<br>
+``encode_params``&nbsp;finally&nbsp;preprocesses&nbsp;API&nbsp;parameters&nbsp;before<br>
+they&nbsp;are&nbsp;passed&nbsp;to&nbsp;``api_request``.</tt></dd></dl>
+
+<dl><dt><a name="DeliciousAPI-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="DeliciousAPI-bundles_all"><strong>bundles_all</strong></a>(self, **kwds)</dt><dd><tt>Retrieve&nbsp;user&nbsp;bundles&nbsp;from&nbsp;del.icio.us.<br>
+::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;bundles&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;bundel&nbsp;name="..."&nbsp;tags=..."&gt;</tt></dd></dl>
+
+<dl><dt><a name="DeliciousAPI-bundles_delete"><strong>bundles_delete</strong></a>(self, bundle, **kwds)</dt><dd><tt>Delete&nbsp;a&nbsp;bundle&nbsp;from&nbsp;del.icio.us.&nbsp;Returns&nbsp;a&nbsp;`result`&nbsp;message&nbsp;or<br>
+raises&nbsp;an&nbsp;``<a href="#DeliciousError">DeliciousError</a>``.&nbsp;See&nbsp;``<a href="#DeliciousAPI-request">request</a>()``.<br>
+&nbsp;<br>
+&amp;bundle&nbsp;(required)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;bundle&nbsp;name.</tt></dd></dl>
+
+<dl><dt><a name="DeliciousAPI-bundles_set"><strong>bundles_set</strong></a>(self, bundle, tags, **kwds)</dt><dd><tt>Assign&nbsp;a&nbsp;set&nbsp;of&nbsp;tags&nbsp;to&nbsp;a&nbsp;single&nbsp;bundle,&nbsp;wipes&nbsp;away&nbsp;previous<br>
+settings&nbsp;for&nbsp;bundle.&nbsp;Returns&nbsp;a&nbsp;`result`&nbsp;messages&nbsp;or&nbsp;raises&nbsp;an<br>
+``<a href="#DeliciousError">DeliciousError</a>``.&nbsp;See&nbsp;``<a href="#DeliciousAPI-request">request</a>()``.<br>
+&nbsp;<br>
+&amp;bundle&nbsp;(required)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;bundle&nbsp;name.<br>
+&amp;tags&nbsp;(required)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list&nbsp;of&nbsp;tags.</tt></dd></dl>
+
+<dl><dt><a name="DeliciousAPI-get_method"><strong>get_method</strong></a>(self, path)</dt></dl>
+
+<dl><dt><a name="DeliciousAPI-get_url"><strong>get_url</strong></a>(self, url)</dt><dd><tt>Return&nbsp;the&nbsp;del.icio.us&nbsp;url&nbsp;at&nbsp;which&nbsp;the&nbsp;HTML&nbsp;page&nbsp;with&nbsp;posts&nbsp;for<br>
+``url``&nbsp;can&nbsp;be&nbsp;found.</tt></dd></dl>
+
+<dl><dt><a name="DeliciousAPI-posts_add"><strong>posts_add</strong></a>(self, url, description, extended<font color="#909090">=''</font>, tags<font color="#909090">=''</font>, dt<font color="#909090">=''</font>, replace<font color="#909090">=False</font>, shared<font color="#909090">=True</font>, **kwds)</dt><dd><tt>Add&nbsp;a&nbsp;post&nbsp;to&nbsp;del.icio.us.&nbsp;Returns&nbsp;a&nbsp;`result`&nbsp;message&nbsp;or&nbsp;raises&nbsp;an<br>
+``<a href="#DeliciousError">DeliciousError</a>``.&nbsp;See&nbsp;``<a href="#DeliciousAPI-request">request</a>()``.<br>
+&nbsp;<br>
+&amp;url&nbsp;(required)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;url&nbsp;of&nbsp;the&nbsp;item.<br>
+&amp;description&nbsp;(required)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;description&nbsp;of&nbsp;the&nbsp;item.<br>
+&amp;extended&nbsp;(optional)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;notes&nbsp;for&nbsp;the&nbsp;item.<br>
+&amp;tags&nbsp;(optional)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;tags&nbsp;for&nbsp;the&nbsp;item&nbsp;(space&nbsp;delimited).<br>
+&amp;dt&nbsp;(optional)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;datestamp&nbsp;of&nbsp;the&nbsp;item&nbsp;(format&nbsp;"CCYY-MM-DDThh:mm:ssZ").<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Requires&nbsp;a&nbsp;LITERAL&nbsp;"T"&nbsp;and&nbsp;"Z"&nbsp;like&nbsp;in&nbsp;ISO8601&nbsp;at<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.cl.cam.ac.uk/~mgk25/iso-time.html">http://www.cl.cam.ac.uk/~mgk25/iso-time.html</a>&nbsp;for&nbsp;example:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"1984-09-01T14:21:31Z"<br>
+&amp;replace=no&nbsp;(optional)&nbsp;-&nbsp;don't&nbsp;replace&nbsp;post&nbsp;if&nbsp;given&nbsp;url&nbsp;has&nbsp;already<br>
+&nbsp;&nbsp;&nbsp;&nbsp;been&nbsp;posted.<br>
+&amp;shared=yes&nbsp;(optional)&nbsp;-&nbsp;wether&nbsp;the&nbsp;item&nbsp;is&nbsp;public.</tt></dd></dl>
+
+<dl><dt><a name="DeliciousAPI-posts_all"><strong>posts_all</strong></a>(self, tag<font color="#909090">=''</font>, start<font color="#909090">=None</font>, results<font color="#909090">=None</font>, fromdt<font color="#909090">=None</font>, todt<font color="#909090">=None</font>, meta<font color="#909090">=True</font>, hashes<font color="#909090">=False</font>, **kwds)</dt><dd><tt>Returns&nbsp;all&nbsp;posts.&nbsp;Please&nbsp;use&nbsp;sparingly.&nbsp;Call&nbsp;the&nbsp;`posts_update`<br>
+method&nbsp;to&nbsp;see&nbsp;if&nbsp;you&nbsp;need&nbsp;to&nbsp;fetch&nbsp;this&nbsp;at&nbsp;all.<br>
+::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;posts&nbsp;tag="..."&nbsp;user="..."&nbsp;update="CCYY-MM-DDThh:mm:ssZ"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;post&nbsp;...&gt;<br>
+&nbsp;<br>
+&amp;tag<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(optional)&nbsp;Filter&nbsp;by&nbsp;this&nbsp;tag.<br>
+&amp;start={#}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(optional)&nbsp;Start&nbsp;returning&nbsp;posts&nbsp;this&nbsp;many&nbsp;results&nbsp;into&nbsp;the&nbsp;set.<br>
+&amp;results={#}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(optional)&nbsp;Return&nbsp;this&nbsp;many&nbsp;results.<br>
+&amp;fromdt={CCYY-MM-DDThh:mm:ssZ}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(optional)&nbsp;Filter&nbsp;for&nbsp;posts&nbsp;on&nbsp;this&nbsp;date&nbsp;or&nbsp;later<br>
+&amp;todt={CCYY-MM-DDThh:mm:ssZ}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(optional)&nbsp;Filter&nbsp;for&nbsp;posts&nbsp;on&nbsp;this&nbsp;date&nbsp;or&nbsp;earlier<br>
+&amp;meta=yes<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(optional)&nbsp;Include&nbsp;change&nbsp;detection&nbsp;signatures&nbsp;on&nbsp;each&nbsp;item&nbsp;in&nbsp;a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'meta'&nbsp;attribute.&nbsp;Clients&nbsp;wishing&nbsp;to&nbsp;maintain&nbsp;a&nbsp;synchronized&nbsp;local<br>
+&nbsp;&nbsp;&nbsp;&nbsp;store&nbsp;of&nbsp;bookmarks&nbsp;should&nbsp;retain&nbsp;the&nbsp;value&nbsp;of&nbsp;this&nbsp;attribute&nbsp;-&nbsp;its<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;will&nbsp;change&nbsp;when&nbsp;any&nbsp;significant&nbsp;field&nbsp;of&nbsp;the&nbsp;bookmark<br>
+&nbsp;&nbsp;&nbsp;&nbsp;changes.<br>
+&amp;hashes<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(optional,&nbsp;exclusive)&nbsp;Do&nbsp;not&nbsp;fetch&nbsp;post&nbsp;details&nbsp;but&nbsp;a&nbsp;posts<br>
+&nbsp;&nbsp;&nbsp;&nbsp;manifest&nbsp;with&nbsp;url-&nbsp;and&nbsp;meta-hashes.&nbsp;Other&nbsp;options&nbsp;do&nbsp;not&nbsp;apply.</tt></dd></dl>
+
+<dl><dt><a name="DeliciousAPI-posts_dates"><strong>posts_dates</strong></a>(self, tag<font color="#909090">=''</font>, **kwds)</dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;dates&nbsp;with&nbsp;the&nbsp;number&nbsp;of&nbsp;posts&nbsp;at&nbsp;each&nbsp;date.<br>
+::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;dates&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;date&nbsp;date="CCYY-MM-DD"&nbsp;count="888"&gt;<br>
+&nbsp;<br>
+&amp;tag={TAG}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(optional)&nbsp;Filter&nbsp;by&nbsp;this&nbsp;tag</tt></dd></dl>
+
+<dl><dt><a name="DeliciousAPI-posts_delete"><strong>posts_delete</strong></a>(self, url, **kwds)</dt><dd><tt>Delete&nbsp;a&nbsp;post&nbsp;from&nbsp;del.icio.us.&nbsp;Returns&nbsp;a&nbsp;`result`&nbsp;message&nbsp;or<br>
+raises&nbsp;an&nbsp;``<a href="#DeliciousError">DeliciousError</a>``.&nbsp;See&nbsp;``<a href="#DeliciousAPI-request">request</a>()``.<br>
+&nbsp;<br>
+&amp;url&nbsp;(required)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;url&nbsp;of&nbsp;the&nbsp;item.</tt></dd></dl>
+
+<dl><dt><a name="DeliciousAPI-posts_get"><strong>posts_get</strong></a>(self, tag<font color="#909090">=''</font>, dt<font color="#909090">=''</font>, url<font color="#909090">=''</font>, hashes<font color="#909090">=[]</font>, meta<font color="#909090">=True</font>, **kwds)</dt><dd><tt>Returns&nbsp;posts&nbsp;matching&nbsp;the&nbsp;arguments.&nbsp;If&nbsp;no&nbsp;date&nbsp;or&nbsp;url&nbsp;is&nbsp;given,<br>
+most&nbsp;recent&nbsp;date&nbsp;will&nbsp;be&nbsp;used.<br>
+::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;posts&nbsp;dt="CCYY-MM-DD"&nbsp;tag="..."&nbsp;user="..."&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;post&nbsp;...&gt;<br>
+&nbsp;<br>
+&amp;tag={TAG}&nbsp;{TAG}&nbsp;...&nbsp;{TAG}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(optional)&nbsp;Filter&nbsp;by&nbsp;this/these&nbsp;tag(s).<br>
+&amp;dt={CCYY-MM-DDThh:mm:ssZ}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(optional)&nbsp;Filter&nbsp;by&nbsp;this&nbsp;date,&nbsp;defaults&nbsp;to&nbsp;the&nbsp;most&nbsp;recent&nbsp;date&nbsp;on<br>
+&nbsp;&nbsp;&nbsp;&nbsp;which&nbsp;bookmarks&nbsp;were&nbsp;saved.<br>
+&amp;url={URL}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(optional)&nbsp;Fetch&nbsp;a&nbsp;bookmark&nbsp;for&nbsp;this&nbsp;URL,&nbsp;regardless&nbsp;of&nbsp;date.<br>
+&amp;hashes={MD5}&nbsp;{MD5}&nbsp;...&nbsp;{MD5}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(optional)&nbsp;Fetch&nbsp;multiple&nbsp;bookmarks&nbsp;by&nbsp;one&nbsp;or&nbsp;more&nbsp;URL&nbsp;MD5s<br>
+&nbsp;&nbsp;&nbsp;&nbsp;regardless&nbsp;of&nbsp;date.<br>
+&amp;meta=yes<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(optional)&nbsp;Include&nbsp;change&nbsp;detection&nbsp;signatures&nbsp;on&nbsp;each&nbsp;item&nbsp;in&nbsp;a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'meta'&nbsp;attribute.&nbsp;Clients&nbsp;wishing&nbsp;to&nbsp;maintain&nbsp;a&nbsp;synchronized&nbsp;local<br>
+&nbsp;&nbsp;&nbsp;&nbsp;store&nbsp;of&nbsp;bookmarks&nbsp;should&nbsp;retain&nbsp;the&nbsp;value&nbsp;of&nbsp;this&nbsp;attribute&nbsp;-&nbsp;its<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;will&nbsp;change&nbsp;when&nbsp;any&nbsp;significant&nbsp;field&nbsp;of&nbsp;the&nbsp;bookmark<br>
+&nbsp;&nbsp;&nbsp;&nbsp;changes.</tt></dd></dl>
+
+<dl><dt><a name="DeliciousAPI-posts_recent"><strong>posts_recent</strong></a>(self, tag<font color="#909090">=''</font>, count<font color="#909090">=''</font>, **kwds)</dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;the&nbsp;most&nbsp;recent&nbsp;posts,&nbsp;filtered&nbsp;by&nbsp;argument.<br>
+::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;posts&nbsp;tag="..."&nbsp;user="..."&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;post&nbsp;...&gt;<br>
+&nbsp;<br>
+&amp;tag={TAG}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(optional)&nbsp;Filter&nbsp;by&nbsp;this&nbsp;tag.<br>
+&amp;count={1..100}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(optional)&nbsp;Number&nbsp;of&nbsp;items&nbsp;to&nbsp;retrieve&nbsp;(Default:15,&nbsp;Maximum:100).</tt></dd></dl>
+
+<dl><dt><a name="DeliciousAPI-posts_update"><strong>posts_update</strong></a>(self, **kwds)</dt><dd><tt>Returns&nbsp;the&nbsp;last&nbsp;update&nbsp;time&nbsp;for&nbsp;the&nbsp;user.&nbsp;Use&nbsp;this&nbsp;before&nbsp;calling<br>
+`posts_all`&nbsp;to&nbsp;see&nbsp;if&nbsp;the&nbsp;data&nbsp;has&nbsp;changed&nbsp;since&nbsp;the&nbsp;last&nbsp;fetch.<br>
+::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;update&nbsp;time="CCYY-MM-DDThh:mm:ssZ"&gt;</tt></dd></dl>
+
+<dl><dt><a name="DeliciousAPI-request"><strong>request</strong></a>(self, path, _raw<font color="#909090">=False</font>, **params)</dt><dd><tt>Sends&nbsp;a&nbsp;request&nbsp;message&nbsp;to&nbsp;`path`&nbsp;in&nbsp;the&nbsp;API,&nbsp;and&nbsp;parses&nbsp;the&nbsp;results<br>
+from&nbsp;XML.&nbsp;Use&nbsp;with&nbsp;``_raw=True``&nbsp;or&nbsp;``call&nbsp;<a href="#DeliciousAPI-request_raw">request_raw</a>()``&nbsp;directly<br>
+to&nbsp;get&nbsp;the&nbsp;filehandler&nbsp;and&nbsp;process&nbsp;the&nbsp;response&nbsp;message&nbsp;manually.<br>
+&nbsp;<br>
+Calls&nbsp;to&nbsp;some&nbsp;paths&nbsp;will&nbsp;return&nbsp;a&nbsp;`result`&nbsp;message,&nbsp;i.e.::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;result&nbsp;code="..."&nbsp;/&gt;<br>
+&nbsp;<br>
+or::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;result&gt;...&lt;/result&gt;<br>
+&nbsp;<br>
+These&nbsp;should&nbsp;all&nbsp;be&nbsp;parsed&nbsp;to&nbsp;``{'result':(Boolean,&nbsp;MessageString)}``,<br>
+this&nbsp;method&nbsp;raises&nbsp;a&nbsp;``<a href="#DeliciousError">DeliciousError</a>``&nbsp;on&nbsp;negative&nbsp;`result`&nbsp;answers.<br>
+Positive&nbsp;answers&nbsp;are&nbsp;silently&nbsp;accepted&nbsp;and&nbsp;nothing&nbsp;is&nbsp;returned.<br>
+&nbsp;<br>
+Using&nbsp;``_raw=True``&nbsp;bypasses&nbsp;all&nbsp;parsing&nbsp;and&nbsp;never&nbsp;raises<br>
+``<a href="#DeliciousError">DeliciousError</a>``.<br>
+&nbsp;<br>
+See&nbsp;``<a href="#-dlcs_parse_xml">dlcs_parse_xml</a>()``&nbsp;and&nbsp;``<a href="#DeliciousAPI-request_raw">request_raw</a>()``.</tt></dd></dl>
+
+<dl><dt><a name="DeliciousAPI-request_raw"><strong>request_raw</strong></a>(self, path, **params)</dt><dd><tt>Calls&nbsp;the&nbsp;path&nbsp;in&nbsp;the&nbsp;API,&nbsp;returns&nbsp;the&nbsp;filehandle.&nbsp;Returned&nbsp;file-<br>
+like&nbsp;instances&nbsp;have&nbsp;an&nbsp;``HTTPMessage``&nbsp;instance&nbsp;with&nbsp;HTTP&nbsp;header<br>
+information&nbsp;available.&nbsp;Use&nbsp;``filehandle.info()``&nbsp;or&nbsp;refer&nbsp;to&nbsp;the<br>
+``urllib2.openurl``&nbsp;documentation.</tt></dd></dl>
+
+<dl><dt><a name="DeliciousAPI-tags_delete"><strong>tags_delete</strong></a>(self, tag, **kwds)</dt><dd><tt>Delete&nbsp;an&nbsp;existing&nbsp;tag.<br>
+&nbsp;<br>
+&amp;tag={TAG}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(required)&nbsp;Tag&nbsp;to&nbsp;delete</tt></dd></dl>
+
+<dl><dt><a name="DeliciousAPI-tags_get"><strong>tags_get</strong></a>(self, **kwds)</dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;tags&nbsp;and&nbsp;the&nbsp;number&nbsp;of&nbsp;times&nbsp;it&nbsp;is&nbsp;used&nbsp;by&nbsp;the<br>
+user.<br>
+::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;tags&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tag&nbsp;tag="TagName"&nbsp;count="888"&gt;</tt></dd></dl>
+
+<dl><dt><a name="DeliciousAPI-tags_rename"><strong>tags_rename</strong></a>(self, old, new, **kwds)</dt><dd><tt>Rename&nbsp;an&nbsp;existing&nbsp;tag&nbsp;with&nbsp;a&nbsp;new&nbsp;tag&nbsp;name.&nbsp;Returns&nbsp;a&nbsp;`result`<br>
+message&nbsp;or&nbsp;raises&nbsp;an&nbsp;``<a href="#DeliciousError">DeliciousError</a>``.&nbsp;See&nbsp;``<a href="#DeliciousAPI-request">request</a>()``.<br>
+&nbsp;<br>
+&amp;old={TAG}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(required)&nbsp;Tag&nbsp;to&nbsp;rename.<br>
+&amp;new={TAG}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(required)&nbsp;New&nbsp;tag&nbsp;name.</tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>paths</strong> = {'posts/add': 'posts_add', 'posts/all': 'posts_all', 'posts/dates': 'posts_dates', 'posts/delete': 'posts_delete', 'posts/get': 'posts_get', 'posts/recent': 'posts_recent', 'posts/update': 'posts_update', 'tags/bundles/all': 'bundles_all', 'tags/bundles/delete': 'bundles_delete', 'tags/bundles/set': 'bundles_set', ...}</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="DeliciousError">class <strong>DeliciousError</strong></a>(<a href="exceptions.html#Exception">exceptions.Exception</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Raised&nbsp;when&nbsp;the&nbsp;server&nbsp;responds&nbsp;with&nbsp;a&nbsp;negative&nbsp;answer<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="__init__.html#DeliciousError">DeliciousError</a></dd>
+<dd><a href="exceptions.html#Exception">exceptions.Exception</a></dd>
+<dd><a href="exceptions.html#BaseException">exceptions.BaseException</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="DeliciousError-raiseFor"><strong>raiseFor</strong></a>(error_string, path, **params)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Methods inherited from <a href="exceptions.html#Exception">exceptions.Exception</a>:<br>
+<dl><dt><a name="DeliciousError-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt>x.<a href="#DeliciousError-__init__">__init__</a>(...)&nbsp;initializes&nbsp;x;&nbsp;see&nbsp;x.__class__.__doc__&nbsp;for&nbsp;signature</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="exceptions.html#Exception">exceptions.Exception</a>:<br>
+<dl><dt><strong>__new__</strong> = &lt;built-in method __new__ of type object&gt;<dd><tt>T.<a href="#DeliciousError-__new__">__new__</a>(S,&nbsp;...)&nbsp;-&gt;&nbsp;a&nbsp;new&nbsp;object&nbsp;with&nbsp;type&nbsp;S,&nbsp;a&nbsp;subtype&nbsp;of&nbsp;T</tt></dl>
+
+<hr>
+Methods inherited from <a href="exceptions.html#BaseException">exceptions.BaseException</a>:<br>
+<dl><dt><a name="DeliciousError-__delattr__"><strong>__delattr__</strong></a>(...)</dt><dd><tt>x.<a href="#DeliciousError-__delattr__">__delattr__</a>('name')&nbsp;&lt;==&gt;&nbsp;del&nbsp;x.name</tt></dd></dl>
+
+<dl><dt><a name="DeliciousError-__getattribute__"><strong>__getattribute__</strong></a>(...)</dt><dd><tt>x.<a href="#DeliciousError-__getattribute__">__getattribute__</a>('name')&nbsp;&lt;==&gt;&nbsp;x.name</tt></dd></dl>
+
+<dl><dt><a name="DeliciousError-__getitem__"><strong>__getitem__</strong></a>(...)</dt><dd><tt>x.<a href="#DeliciousError-__getitem__">__getitem__</a>(y)&nbsp;&lt;==&gt;&nbsp;x[y]</tt></dd></dl>
+
+<dl><dt><a name="DeliciousError-__getslice__"><strong>__getslice__</strong></a>(...)</dt><dd><tt>x.<a href="#DeliciousError-__getslice__">__getslice__</a>(i,&nbsp;j)&nbsp;&lt;==&gt;&nbsp;x[i:j]<br>
+&nbsp;<br>
+Use&nbsp;of&nbsp;negative&nbsp;indices&nbsp;is&nbsp;not&nbsp;supported.</tt></dd></dl>
+
+<dl><dt><a name="DeliciousError-__reduce__"><strong>__reduce__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DeliciousError-__repr__"><strong>__repr__</strong></a>(...)</dt><dd><tt>x.<a href="#DeliciousError-__repr__">__repr__</a>()&nbsp;&lt;==&gt;&nbsp;repr(x)</tt></dd></dl>
+
+<dl><dt><a name="DeliciousError-__setattr__"><strong>__setattr__</strong></a>(...)</dt><dd><tt>x.<a href="#DeliciousError-__setattr__">__setattr__</a>('name',&nbsp;value)&nbsp;&lt;==&gt;&nbsp;x.name&nbsp;=&nbsp;value</tt></dd></dl>
+
+<dl><dt><a name="DeliciousError-__setstate__"><strong>__setstate__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DeliciousError-__str__"><strong>__str__</strong></a>(...)</dt><dd><tt>x.<a href="#DeliciousError-__str__">__str__</a>()&nbsp;&lt;==&gt;&nbsp;str(x)</tt></dd></dl>
+
+<dl><dt><a name="DeliciousError-__unicode__"><strong>__unicode__</strong></a>(...)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="exceptions.html#BaseException">exceptions.BaseException</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+<dl><dt><strong>args</strong></dt>
+</dl>
+<dl><dt><strong>message</strong></dt>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="DeliciousHTTPErrorHandler">class <strong>DeliciousHTTPErrorHandler</strong></a>(<a href="urllib2.html#HTTPDefaultErrorHandler">urllib2.HTTPDefaultErrorHandler</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="__init__.html#DeliciousHTTPErrorHandler">DeliciousHTTPErrorHandler</a></dd>
+<dd><a href="urllib2.html#HTTPDefaultErrorHandler">urllib2.HTTPDefaultErrorHandler</a></dd>
+<dd><a href="urllib2.html#BaseHandler">urllib2.BaseHandler</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="DeliciousHTTPErrorHandler-http_error_401"><strong>http_error_401</strong></a>(self, req, fp, code, msg, headers)</dt></dl>
+
+<dl><dt><a name="DeliciousHTTPErrorHandler-http_error_503"><strong>http_error_503</strong></a>(self, req, fp, code, msg, headers)</dt></dl>
+
+<hr>
+Methods inherited from <a href="urllib2.html#HTTPDefaultErrorHandler">urllib2.HTTPDefaultErrorHandler</a>:<br>
+<dl><dt><a name="DeliciousHTTPErrorHandler-http_error_default"><strong>http_error_default</strong></a>(self, req, fp, code, msg, hdrs)</dt></dl>
+
+<hr>
+Methods inherited from <a href="urllib2.html#BaseHandler">urllib2.BaseHandler</a>:<br>
+<dl><dt><a name="DeliciousHTTPErrorHandler-__lt__"><strong>__lt__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="DeliciousHTTPErrorHandler-add_parent"><strong>add_parent</strong></a>(self, parent)</dt></dl>
+
+<dl><dt><a name="DeliciousHTTPErrorHandler-close"><strong>close</strong></a>(self)</dt></dl>
+
+<hr>
+Data and other attributes inherited from <a href="urllib2.html#BaseHandler">urllib2.BaseHandler</a>:<br>
+<dl><dt><strong>handler_order</strong> = 500</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="DeliciousItemExistsError">class <strong>DeliciousItemExistsError</strong></a>(<a href="__init__.html#DeliciousError">DeliciousError</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Raised&nbsp;then&nbsp;adding&nbsp;an&nbsp;already&nbsp;existing&nbsp;post.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="__init__.html#DeliciousItemExistsError">DeliciousItemExistsError</a></dd>
+<dd><a href="__init__.html#DeliciousError">DeliciousError</a></dd>
+<dd><a href="exceptions.html#Exception">exceptions.Exception</a></dd>
+<dd><a href="exceptions.html#BaseException">exceptions.BaseException</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Static methods inherited from <a href="__init__.html#DeliciousError">DeliciousError</a>:<br>
+<dl><dt><a name="DeliciousItemExistsError-raiseFor"><strong>raiseFor</strong></a>(error_string, path, **params)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="__init__.html#DeliciousError">DeliciousError</a>:<br>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Methods inherited from <a href="exceptions.html#Exception">exceptions.Exception</a>:<br>
+<dl><dt><a name="DeliciousItemExistsError-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt>x.<a href="#DeliciousItemExistsError-__init__">__init__</a>(...)&nbsp;initializes&nbsp;x;&nbsp;see&nbsp;x.__class__.__doc__&nbsp;for&nbsp;signature</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="exceptions.html#Exception">exceptions.Exception</a>:<br>
+<dl><dt><strong>__new__</strong> = &lt;built-in method __new__ of type object&gt;<dd><tt>T.<a href="#DeliciousItemExistsError-__new__">__new__</a>(S,&nbsp;...)&nbsp;-&gt;&nbsp;a&nbsp;new&nbsp;object&nbsp;with&nbsp;type&nbsp;S,&nbsp;a&nbsp;subtype&nbsp;of&nbsp;T</tt></dl>
+
+<hr>
+Methods inherited from <a href="exceptions.html#BaseException">exceptions.BaseException</a>:<br>
+<dl><dt><a name="DeliciousItemExistsError-__delattr__"><strong>__delattr__</strong></a>(...)</dt><dd><tt>x.<a href="#DeliciousItemExistsError-__delattr__">__delattr__</a>('name')&nbsp;&lt;==&gt;&nbsp;del&nbsp;x.name</tt></dd></dl>
+
+<dl><dt><a name="DeliciousItemExistsError-__getattribute__"><strong>__getattribute__</strong></a>(...)</dt><dd><tt>x.<a href="#DeliciousItemExistsError-__getattribute__">__getattribute__</a>('name')&nbsp;&lt;==&gt;&nbsp;x.name</tt></dd></dl>
+
+<dl><dt><a name="DeliciousItemExistsError-__getitem__"><strong>__getitem__</strong></a>(...)</dt><dd><tt>x.<a href="#DeliciousItemExistsError-__getitem__">__getitem__</a>(y)&nbsp;&lt;==&gt;&nbsp;x[y]</tt></dd></dl>
+
+<dl><dt><a name="DeliciousItemExistsError-__getslice__"><strong>__getslice__</strong></a>(...)</dt><dd><tt>x.<a href="#DeliciousItemExistsError-__getslice__">__getslice__</a>(i,&nbsp;j)&nbsp;&lt;==&gt;&nbsp;x[i:j]<br>
+&nbsp;<br>
+Use&nbsp;of&nbsp;negative&nbsp;indices&nbsp;is&nbsp;not&nbsp;supported.</tt></dd></dl>
+
+<dl><dt><a name="DeliciousItemExistsError-__reduce__"><strong>__reduce__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DeliciousItemExistsError-__repr__"><strong>__repr__</strong></a>(...)</dt><dd><tt>x.<a href="#DeliciousItemExistsError-__repr__">__repr__</a>()&nbsp;&lt;==&gt;&nbsp;repr(x)</tt></dd></dl>
+
+<dl><dt><a name="DeliciousItemExistsError-__setattr__"><strong>__setattr__</strong></a>(...)</dt><dd><tt>x.<a href="#DeliciousItemExistsError-__setattr__">__setattr__</a>('name',&nbsp;value)&nbsp;&lt;==&gt;&nbsp;x.name&nbsp;=&nbsp;value</tt></dd></dl>
+
+<dl><dt><a name="DeliciousItemExistsError-__setstate__"><strong>__setstate__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DeliciousItemExistsError-__str__"><strong>__str__</strong></a>(...)</dt><dd><tt>x.<a href="#DeliciousItemExistsError-__str__">__str__</a>()&nbsp;&lt;==&gt;&nbsp;str(x)</tt></dd></dl>
+
+<dl><dt><a name="DeliciousItemExistsError-__unicode__"><strong>__unicode__</strong></a>(...)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="exceptions.html#BaseException">exceptions.BaseException</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+<dl><dt><strong>args</strong></dt>
+</dl>
+<dl><dt><strong>message</strong></dt>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="PyDeliciousException">class <strong>PyDeliciousException</strong></a>(<a href="exceptions.html#Exception">exceptions.Exception</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Standard&nbsp;pydelicious&nbsp;error<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="__init__.html#PyDeliciousException">PyDeliciousException</a></dd>
+<dd><a href="exceptions.html#Exception">exceptions.Exception</a></dd>
+<dd><a href="exceptions.html#BaseException">exceptions.BaseException</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Methods inherited from <a href="exceptions.html#Exception">exceptions.Exception</a>:<br>
+<dl><dt><a name="PyDeliciousException-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt>x.<a href="#PyDeliciousException-__init__">__init__</a>(...)&nbsp;initializes&nbsp;x;&nbsp;see&nbsp;x.__class__.__doc__&nbsp;for&nbsp;signature</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="exceptions.html#Exception">exceptions.Exception</a>:<br>
+<dl><dt><strong>__new__</strong> = &lt;built-in method __new__ of type object&gt;<dd><tt>T.<a href="#PyDeliciousException-__new__">__new__</a>(S,&nbsp;...)&nbsp;-&gt;&nbsp;a&nbsp;new&nbsp;object&nbsp;with&nbsp;type&nbsp;S,&nbsp;a&nbsp;subtype&nbsp;of&nbsp;T</tt></dl>
+
+<hr>
+Methods inherited from <a href="exceptions.html#BaseException">exceptions.BaseException</a>:<br>
+<dl><dt><a name="PyDeliciousException-__delattr__"><strong>__delattr__</strong></a>(...)</dt><dd><tt>x.<a href="#PyDeliciousException-__delattr__">__delattr__</a>('name')&nbsp;&lt;==&gt;&nbsp;del&nbsp;x.name</tt></dd></dl>
+
+<dl><dt><a name="PyDeliciousException-__getattribute__"><strong>__getattribute__</strong></a>(...)</dt><dd><tt>x.<a href="#PyDeliciousException-__getattribute__">__getattribute__</a>('name')&nbsp;&lt;==&gt;&nbsp;x.name</tt></dd></dl>
+
+<dl><dt><a name="PyDeliciousException-__getitem__"><strong>__getitem__</strong></a>(...)</dt><dd><tt>x.<a href="#PyDeliciousException-__getitem__">__getitem__</a>(y)&nbsp;&lt;==&gt;&nbsp;x[y]</tt></dd></dl>
+
+<dl><dt><a name="PyDeliciousException-__getslice__"><strong>__getslice__</strong></a>(...)</dt><dd><tt>x.<a href="#PyDeliciousException-__getslice__">__getslice__</a>(i,&nbsp;j)&nbsp;&lt;==&gt;&nbsp;x[i:j]<br>
+&nbsp;<br>
+Use&nbsp;of&nbsp;negative&nbsp;indices&nbsp;is&nbsp;not&nbsp;supported.</tt></dd></dl>
+
+<dl><dt><a name="PyDeliciousException-__reduce__"><strong>__reduce__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="PyDeliciousException-__repr__"><strong>__repr__</strong></a>(...)</dt><dd><tt>x.<a href="#PyDeliciousException-__repr__">__repr__</a>()&nbsp;&lt;==&gt;&nbsp;repr(x)</tt></dd></dl>
+
+<dl><dt><a name="PyDeliciousException-__setattr__"><strong>__setattr__</strong></a>(...)</dt><dd><tt>x.<a href="#PyDeliciousException-__setattr__">__setattr__</a>('name',&nbsp;value)&nbsp;&lt;==&gt;&nbsp;x.name&nbsp;=&nbsp;value</tt></dd></dl>
+
+<dl><dt><a name="PyDeliciousException-__setstate__"><strong>__setstate__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="PyDeliciousException-__str__"><strong>__str__</strong></a>(...)</dt><dd><tt>x.<a href="#PyDeliciousException-__str__">__str__</a>()&nbsp;&lt;==&gt;&nbsp;str(x)</tt></dd></dl>
+
+<dl><dt><a name="PyDeliciousException-__unicode__"><strong>__unicode__</strong></a>(...)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="exceptions.html#BaseException">exceptions.BaseException</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+<dl><dt><strong>args</strong></dt>
+</dl>
+<dl><dt><strong>message</strong></dt>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="PyDeliciousThrottled">class <strong>PyDeliciousThrottled</strong></a>(<a href="exceptions.html#Exception">exceptions.Exception</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="__init__.html#PyDeliciousThrottled">PyDeliciousThrottled</a></dd>
+<dd><a href="exceptions.html#Exception">exceptions.Exception</a></dd>
+<dd><a href="exceptions.html#BaseException">exceptions.BaseException</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Methods inherited from <a href="exceptions.html#Exception">exceptions.Exception</a>:<br>
+<dl><dt><a name="PyDeliciousThrottled-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt>x.<a href="#PyDeliciousThrottled-__init__">__init__</a>(...)&nbsp;initializes&nbsp;x;&nbsp;see&nbsp;x.__class__.__doc__&nbsp;for&nbsp;signature</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="exceptions.html#Exception">exceptions.Exception</a>:<br>
+<dl><dt><strong>__new__</strong> = &lt;built-in method __new__ of type object&gt;<dd><tt>T.<a href="#PyDeliciousThrottled-__new__">__new__</a>(S,&nbsp;...)&nbsp;-&gt;&nbsp;a&nbsp;new&nbsp;object&nbsp;with&nbsp;type&nbsp;S,&nbsp;a&nbsp;subtype&nbsp;of&nbsp;T</tt></dl>
+
+<hr>
+Methods inherited from <a href="exceptions.html#BaseException">exceptions.BaseException</a>:<br>
+<dl><dt><a name="PyDeliciousThrottled-__delattr__"><strong>__delattr__</strong></a>(...)</dt><dd><tt>x.<a href="#PyDeliciousThrottled-__delattr__">__delattr__</a>('name')&nbsp;&lt;==&gt;&nbsp;del&nbsp;x.name</tt></dd></dl>
+
+<dl><dt><a name="PyDeliciousThrottled-__getattribute__"><strong>__getattribute__</strong></a>(...)</dt><dd><tt>x.<a href="#PyDeliciousThrottled-__getattribute__">__getattribute__</a>('name')&nbsp;&lt;==&gt;&nbsp;x.name</tt></dd></dl>
+
+<dl><dt><a name="PyDeliciousThrottled-__getitem__"><strong>__getitem__</strong></a>(...)</dt><dd><tt>x.<a href="#PyDeliciousThrottled-__getitem__">__getitem__</a>(y)&nbsp;&lt;==&gt;&nbsp;x[y]</tt></dd></dl>
+
+<dl><dt><a name="PyDeliciousThrottled-__getslice__"><strong>__getslice__</strong></a>(...)</dt><dd><tt>x.<a href="#PyDeliciousThrottled-__getslice__">__getslice__</a>(i,&nbsp;j)&nbsp;&lt;==&gt;&nbsp;x[i:j]<br>
+&nbsp;<br>
+Use&nbsp;of&nbsp;negative&nbsp;indices&nbsp;is&nbsp;not&nbsp;supported.</tt></dd></dl>
+
+<dl><dt><a name="PyDeliciousThrottled-__reduce__"><strong>__reduce__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="PyDeliciousThrottled-__repr__"><strong>__repr__</strong></a>(...)</dt><dd><tt>x.<a href="#PyDeliciousThrottled-__repr__">__repr__</a>()&nbsp;&lt;==&gt;&nbsp;repr(x)</tt></dd></dl>
+
+<dl><dt><a name="PyDeliciousThrottled-__setattr__"><strong>__setattr__</strong></a>(...)</dt><dd><tt>x.<a href="#PyDeliciousThrottled-__setattr__">__setattr__</a>('name',&nbsp;value)&nbsp;&lt;==&gt;&nbsp;x.name&nbsp;=&nbsp;value</tt></dd></dl>
+
+<dl><dt><a name="PyDeliciousThrottled-__setstate__"><strong>__setstate__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="PyDeliciousThrottled-__str__"><strong>__str__</strong></a>(...)</dt><dd><tt>x.<a href="#PyDeliciousThrottled-__str__">__str__</a>()&nbsp;&lt;==&gt;&nbsp;str(x)</tt></dd></dl>
+
+<dl><dt><a name="PyDeliciousThrottled-__unicode__"><strong>__unicode__</strong></a>(...)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="exceptions.html#BaseException">exceptions.BaseException</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+<dl><dt><strong>args</strong></dt>
+</dl>
+<dl><dt><strong>message</strong></dt>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="PyDeliciousUnauthorized">class <strong>PyDeliciousUnauthorized</strong></a>(<a href="exceptions.html#Exception">exceptions.Exception</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="__init__.html#PyDeliciousUnauthorized">PyDeliciousUnauthorized</a></dd>
+<dd><a href="exceptions.html#Exception">exceptions.Exception</a></dd>
+<dd><a href="exceptions.html#BaseException">exceptions.BaseException</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Methods inherited from <a href="exceptions.html#Exception">exceptions.Exception</a>:<br>
+<dl><dt><a name="PyDeliciousUnauthorized-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt>x.<a href="#PyDeliciousUnauthorized-__init__">__init__</a>(...)&nbsp;initializes&nbsp;x;&nbsp;see&nbsp;x.__class__.__doc__&nbsp;for&nbsp;signature</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="exceptions.html#Exception">exceptions.Exception</a>:<br>
+<dl><dt><strong>__new__</strong> = &lt;built-in method __new__ of type object&gt;<dd><tt>T.<a href="#PyDeliciousUnauthorized-__new__">__new__</a>(S,&nbsp;...)&nbsp;-&gt;&nbsp;a&nbsp;new&nbsp;object&nbsp;with&nbsp;type&nbsp;S,&nbsp;a&nbsp;subtype&nbsp;of&nbsp;T</tt></dl>
+
+<hr>
+Methods inherited from <a href="exceptions.html#BaseException">exceptions.BaseException</a>:<br>
+<dl><dt><a name="PyDeliciousUnauthorized-__delattr__"><strong>__delattr__</strong></a>(...)</dt><dd><tt>x.<a href="#PyDeliciousUnauthorized-__delattr__">__delattr__</a>('name')&nbsp;&lt;==&gt;&nbsp;del&nbsp;x.name</tt></dd></dl>
+
+<dl><dt><a name="PyDeliciousUnauthorized-__getattribute__"><strong>__getattribute__</strong></a>(...)</dt><dd><tt>x.<a href="#PyDeliciousUnauthorized-__getattribute__">__getattribute__</a>('name')&nbsp;&lt;==&gt;&nbsp;x.name</tt></dd></dl>
+
+<dl><dt><a name="PyDeliciousUnauthorized-__getitem__"><strong>__getitem__</strong></a>(...)</dt><dd><tt>x.<a href="#PyDeliciousUnauthorized-__getitem__">__getitem__</a>(y)&nbsp;&lt;==&gt;&nbsp;x[y]</tt></dd></dl>
+
+<dl><dt><a name="PyDeliciousUnauthorized-__getslice__"><strong>__getslice__</strong></a>(...)</dt><dd><tt>x.<a href="#PyDeliciousUnauthorized-__getslice__">__getslice__</a>(i,&nbsp;j)&nbsp;&lt;==&gt;&nbsp;x[i:j]<br>
+&nbsp;<br>
+Use&nbsp;of&nbsp;negative&nbsp;indices&nbsp;is&nbsp;not&nbsp;supported.</tt></dd></dl>
+
+<dl><dt><a name="PyDeliciousUnauthorized-__reduce__"><strong>__reduce__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="PyDeliciousUnauthorized-__repr__"><strong>__repr__</strong></a>(...)</dt><dd><tt>x.<a href="#PyDeliciousUnauthorized-__repr__">__repr__</a>()&nbsp;&lt;==&gt;&nbsp;repr(x)</tt></dd></dl>
+
+<dl><dt><a name="PyDeliciousUnauthorized-__setattr__"><strong>__setattr__</strong></a>(...)</dt><dd><tt>x.<a href="#PyDeliciousUnauthorized-__setattr__">__setattr__</a>('name',&nbsp;value)&nbsp;&lt;==&gt;&nbsp;x.name&nbsp;=&nbsp;value</tt></dd></dl>
+
+<dl><dt><a name="PyDeliciousUnauthorized-__setstate__"><strong>__setstate__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="PyDeliciousUnauthorized-__str__"><strong>__str__</strong></a>(...)</dt><dd><tt>x.<a href="#PyDeliciousUnauthorized-__str__">__str__</a>()&nbsp;&lt;==&gt;&nbsp;str(x)</tt></dd></dl>
+
+<dl><dt><a name="PyDeliciousUnauthorized-__unicode__"><strong>__unicode__</strong></a>(...)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="exceptions.html#BaseException">exceptions.BaseException</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+<dl><dt><strong>args</strong></dt>
+</dl>
+<dl><dt><strong>message</strong></dt>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-add"><strong>add</strong></a>(user, passwd, url, description, tags<font color="#909090">=''</font>, extended<font color="#909090">=''</font>, dt<font color="#909090">=None</font>, replace<font color="#909090">=False</font>)</dt><dd><tt>Add&nbsp;a&nbsp;post&nbsp;for&nbsp;user.</tt></dd></dl>
+ <dl><dt><a name="-apiNew"><strong>apiNew</strong></a>(user, passwd)</dt><dd><tt>Creates&nbsp;a&nbsp;new&nbsp;<a href="#DeliciousAPI">DeliciousAPI</a>&nbsp;object,&nbsp;requires&nbsp;user(name)&nbsp;and&nbsp;passwd.</tt></dd></dl>
+ <dl><dt><a name="-build_api_opener"><strong>build_api_opener</strong></a>(host, user, passwd, extra_handlers<font color="#909090">=()</font>)</dt><dd><tt>Build&nbsp;a&nbsp;urllib2&nbsp;style&nbsp;opener&nbsp;with&nbsp;HTTP&nbsp;Basic&nbsp;authorization&nbsp;for&nbsp;one&nbsp;host<br>
+and&nbsp;additional&nbsp;error&nbsp;handling.&nbsp;If&nbsp;HTTP_PROXY&nbsp;is&nbsp;set&nbsp;a&nbsp;proxyhandler&nbsp;is&nbsp;also<br>
+added.</tt></dd></dl>
+ <dl><dt><a name="-delete"><strong>delete</strong></a>(user, passwd, url)</dt><dd><tt>Delete&nbsp;the&nbsp;URL&nbsp;from&nbsp;the&nbsp;del.icio.us&nbsp;account.</tt></dd></dl>
+ <dl><dt><a name="-delicious_datetime"><strong>delicious_datetime</strong></a>(str)</dt><dd><tt>Parse&nbsp;a&nbsp;ISO&nbsp;8601&nbsp;formatted&nbsp;string&nbsp;to&nbsp;a&nbsp;Python&nbsp;datetime&nbsp;...</tt></dd></dl>
+ <dl><dt><a name="-dict0"><strong>dict0</strong></a>(d)</dt><dd><tt>Removes&nbsp;empty&nbsp;string&nbsp;values&nbsp;from&nbsp;dictionary</tt></dd></dl>
+ <dl><dt><a name="-dlcs_api_opener"><strong>dlcs_api_opener</strong></a>(user, passwd)</dt><dd><tt>Build&nbsp;an&nbsp;opener&nbsp;for&nbsp;DLCS_API_HOST,&nbsp;see&nbsp;<a href="#-build_api_opener">build_api_opener</a>()</tt></dd></dl>
+ <dl><dt><a name="-dlcs_api_request"><strong>dlcs_api_request</strong></a>(path, params<font color="#909090">=None</font>, user<font color="#909090">=''</font>, passwd<font color="#909090">=''</font>, throttle<font color="#909090">=True</font>, opener<font color="#909090">=None</font>)</dt><dd><tt>Retrieve/query&nbsp;a&nbsp;path&nbsp;within&nbsp;the&nbsp;del.icio.us&nbsp;API.<br>
+&nbsp;<br>
+This&nbsp;implements&nbsp;a&nbsp;minimum&nbsp;interval&nbsp;between&nbsp;calls&nbsp;to&nbsp;avoid<br>
+throttling.&nbsp;[#]_&nbsp;Use&nbsp;param&nbsp;'throttle'&nbsp;to&nbsp;turn&nbsp;this&nbsp;behaviour&nbsp;off.<br>
+&nbsp;<br>
+..&nbsp;[#]&nbsp;<a href="http://del.icio.us/help/api/">http://del.icio.us/help/api/</a></tt></dd></dl>
+ <dl><dt><a name="-dlcs_encode_params"><strong>dlcs_encode_params</strong></a>(params, usercodec<font color="#909090">='UTF-8'</font>, encoded<font color="#909090">=False</font>)</dt><dd><tt>Turn&nbsp;all&nbsp;param&nbsp;values&nbsp;(int,&nbsp;list,&nbsp;bool)&nbsp;into&nbsp;utf8&nbsp;encoded&nbsp;strings.</tt></dd></dl>
+ <dl><dt><a name="-dlcs_feed"><strong>dlcs_feed</strong></a>(name_or_url, url_map<font color="#909090">={'alerts': '%(format)s/alerts', 'hotlist': '%(format)s', 'popular': '%(format)s/popular', 'popular_tagged': '%(format)s/popular/%(tag)s', 'recent': '%(format)s/recent', 'tagged': '%(format)s/tag/%(tag)s', 'url': '%(format)s/url/%(urlmd5)s', 'urlinfo': 'json/urlinfo/%(urlmd5)s', 'user': '%(format)s/%(username)s', 'user_inbox': '%(format)s/inbox/%(username)s?private=%(key)s', ...}</font>, count<font color="#909090">=15</font>, **kwds)</dt><dd><tt>Request&nbsp;and&nbsp;parse&nbsp;a&nbsp;feed.<br>
+Count&nbsp;should&nbsp;be&nbsp;between&nbsp;1&nbsp;and&nbsp;100,&nbsp;default&nbsp;15.<br>
+Format&nbsp;values&nbsp;include&nbsp;'rss'&nbsp;and&nbsp;'json',&nbsp;defaults&nbsp;to&nbsp;json.<br>
+&nbsp;<br>
+-&nbsp;<a href="http://www.delicious.com/help/feeds">http://www.delicious.com/help/feeds</a></tt></dd></dl>
+ <dl><dt><a name="-dlcs_parse_xml"><strong>dlcs_parse_xml</strong></a>(data, split_tags<font color="#909090">=False</font>)</dt><dd><tt>Parse&nbsp;any&nbsp;del.icio.us&nbsp;XML&nbsp;document&nbsp;and&nbsp;return&nbsp;Python&nbsp;data&nbsp;structure.<br>
+&nbsp;<br>
+Recognizes&nbsp;all&nbsp;XML&nbsp;document&nbsp;formats&nbsp;as&nbsp;returned&nbsp;by&nbsp;the&nbsp;version&nbsp;1&nbsp;API&nbsp;and<br>
+translates&nbsp;to&nbsp;a&nbsp;JSON-like&nbsp;data&nbsp;structure&nbsp;(dicts&nbsp;'n&nbsp;lists).<br>
+&nbsp;<br>
+Returned&nbsp;instance&nbsp;is&nbsp;always&nbsp;a&nbsp;dictionary.&nbsp;Examples::<br>
+&nbsp;<br>
+&nbsp;{'posts':&nbsp;[{'url':'...','hash':'...',},],}<br>
+&nbsp;{'tags':['tag1',&nbsp;'tag2',]}<br>
+&nbsp;{'dates':&nbsp;[{'count':'...','date':'...'},],&nbsp;'tag':'',&nbsp;'user':'...'}<br>
+&nbsp;{'result':(True,&nbsp;"done")}<br>
+&nbsp;#&nbsp;etcetera.</tt></dd></dl>
+ <dl><dt><a name="-dlcs_rss_request"><strong>dlcs_rss_request</strong></a>(tag<font color="#909090">=''</font>, popular<font color="#909090">=0</font>, user<font color="#909090">=''</font>, url<font color="#909090">=''</font>)</dt><dd><tt>Parse&nbsp;a&nbsp;RSS&nbsp;request,&nbsp;old&nbsp;style.<br>
+&nbsp;<br>
+This&nbsp;requests&nbsp;old&nbsp;(now&nbsp;undocumented?)&nbsp;URL&nbsp;paths&nbsp;that&nbsp;still&nbsp;seem&nbsp;to&nbsp;work.<br>
+&nbsp;<br>
+-&nbsp;<a href="http://del.icio.us/rss/url/{urimd5">http://del.icio.us/rss/url/{urimd5</a>}<br>
+-&nbsp;<a href="http://del.icio.us/rss/{user}/{tag">http://del.icio.us/rss/{user}/{tag</a>}<br>
+-&nbsp;<a href="http://del.icio.us/rss/{user">http://del.icio.us/rss/{user</a>}<br>
+-&nbsp;<a href="http://del.icio.us/rss">http://del.icio.us/rss</a><br>
+-&nbsp;<a href="http://del.icio.us/rss/tag/{tag">http://del.icio.us/rss/tag/{tag</a>}<br>
+-&nbsp;<a href="http://del.icio.us/rss/popular">http://del.icio.us/rss/popular</a><br>
+-&nbsp;<a href="http://del.icio.us/rss/popular/{tag">http://del.icio.us/rss/popular/{tag</a>}</tt></dd></dl>
+ <dl><dt><a name="-get"><strong>get</strong></a>(user, passwd, tag<font color="#909090">=''</font>, dt<font color="#909090">=None</font>, count<font color="#909090">=0</font>, hashes<font color="#909090">=[]</font>)</dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;posts&nbsp;for&nbsp;the&nbsp;user&nbsp;using&nbsp;the&nbsp;API.</tt></dd></dl>
+ <dl><dt><a name="-get_all"><strong>get_all</strong></a>(user, passwd, tag<font color="#909090">=''</font>, start<font color="#909090">=0</font>, results<font color="#909090">=100</font>, fromdt<font color="#909090">=None</font>, todt<font color="#909090">=None</font>)</dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;with&nbsp;all&nbsp;posts.&nbsp;Please&nbsp;use&nbsp;sparingly.&nbsp;See&nbsp;`get_updated`</tt></dd></dl>
+ <dl><dt><a name="-get_popular"><strong>get_popular</strong></a>(tag<font color="#909090">=''</font>)</dt><dd><tt>parse&nbsp;RSS&nbsp;for&nbsp;popular&nbsp;URLS&nbsp;for&nbsp;tag</tt></dd></dl>
+ <dl><dt><a name="-get_tagposts"><strong>get_tagposts</strong></a>(tag)</dt><dd><tt>parse&nbsp;RSS&nbsp;for&nbsp;tag</tt></dd></dl>
+ <dl><dt><a name="-get_tags"><strong>get_tags</strong></a>(user, passwd)</dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;with&nbsp;all&nbsp;tags&nbsp;for&nbsp;user.</tt></dd></dl>
+ <dl><dt><a name="-get_update"><strong>get_update</strong></a>(user, passwd)</dt><dd><tt>Returns&nbsp;the&nbsp;last&nbsp;update&nbsp;time&nbsp;for&nbsp;the&nbsp;user.</tt></dd></dl>
+ <dl><dt><a name="-get_urlposts"><strong>get_urlposts</strong></a>(url)</dt><dd><tt>parse&nbsp;RSS&nbsp;for&nbsp;URL</tt></dd></dl>
+ <dl><dt><a name="-get_userposts"><strong>get_userposts</strong></a>(user)</dt><dd><tt>parse&nbsp;RSS&nbsp;for&nbsp;user</tt></dd></dl>
+ <dl><dt><a name="-getfeed"><strong>getfeed</strong></a>(name, **params)</dt></dl>
+ <dl><dt><a name="-getrss"><strong>getrss</strong></a>(tag<font color="#909090">=''</font>, popular<font color="#909090">=0</font>, url<font color="#909090">=''</font>, user<font color="#909090">=''</font>)</dt><dd><tt>Get&nbsp;posts&nbsp;from&nbsp;del.icio.us&nbsp;via&nbsp;parsing&nbsp;RSS.<br>
+&nbsp;<br>
+tag&nbsp;(opt)&nbsp;sort&nbsp;by&nbsp;tag<br>
+popular&nbsp;(opt)&nbsp;look&nbsp;for&nbsp;the&nbsp;popular&nbsp;stuff<br>
+user&nbsp;(opt)&nbsp;get&nbsp;the&nbsp;posts&nbsp;by&nbsp;a&nbsp;user,&nbsp;this&nbsp;striks&nbsp;popular<br>
+url&nbsp;(opt)&nbsp;get&nbsp;the&nbsp;posts&nbsp;by&nbsp;url</tt></dd></dl>
+ <dl><dt><a name="-http_request"><strong>http_request</strong></a>(url, user_agent<font color="#909090">='pydelicious/0.6 http://code.google.com/p/pydelicious/'</font>, retry<font color="#909090">=4</font>, opener<font color="#909090">=None</font>)</dt><dd><tt>Retrieve&nbsp;the&nbsp;contents&nbsp;referenced&nbsp;by&nbsp;the&nbsp;URL&nbsp;using&nbsp;urllib2.<br>
+&nbsp;<br>
+Retries&nbsp;up&nbsp;to&nbsp;four&nbsp;times&nbsp;(default)&nbsp;on&nbsp;exceptions.</tt></dd></dl>
+ <dl><dt><a name="-json_fans"><strong>json_fans</strong></a>(user, raw<font color="#909090">=True</font>, callback<font color="#909090">=None</font>)</dt><dd><tt>callback=NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wrap&nbsp;the&nbsp;object&nbsp;definition&nbsp;in&nbsp;a&nbsp;function&nbsp;call&nbsp;NAME(...)<br>
+?raw&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;pure&nbsp;JSON&nbsp;object&nbsp;is&nbsp;returned,&nbsp;instead&nbsp;of&nbsp;an&nbsp;object&nbsp;named&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delicious.</tt></dd></dl>
+ <dl><dt><a name="-json_network"><strong>json_network</strong></a>(user, raw<font color="#909090">=True</font>, callback<font color="#909090">=None</font>)</dt><dd><tt>callback=NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wrap&nbsp;the&nbsp;object&nbsp;definition&nbsp;in&nbsp;a&nbsp;function&nbsp;call&nbsp;NAME(...)<br>
+?raw&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;raw&nbsp;JSON&nbsp;object&nbsp;is&nbsp;returned,&nbsp;instead&nbsp;of&nbsp;an&nbsp;object&nbsp;named&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delicious.posts</tt></dd></dl>
+ <dl><dt><a name="-json_tags"><strong>json_tags</strong></a>(user, atleast, count, sort<font color="#909090">='alpha'</font>, raw<font color="#909090">=True</font>, callback<font color="#909090">=None</font>)</dt><dd><tt>user<br>
+atleast=###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;include&nbsp;only&nbsp;tags&nbsp;for&nbsp;which&nbsp;there&nbsp;are&nbsp;at&nbsp;least&nbsp;###&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number&nbsp;of&nbsp;posts.<br>
+count=###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;include&nbsp;###&nbsp;tags,&nbsp;counting&nbsp;down&nbsp;from&nbsp;the&nbsp;top.<br>
+sort={alpha|count}&nbsp;&nbsp;construct&nbsp;the&nbsp;object&nbsp;with&nbsp;tags&nbsp;in&nbsp;alphabetic&nbsp;order&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(alpha),&nbsp;or&nbsp;by&nbsp;count&nbsp;of&nbsp;posts&nbsp;(count).<br>
+callback=NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wrap&nbsp;the&nbsp;object&nbsp;definition&nbsp;in&nbsp;a&nbsp;function&nbsp;call&nbsp;NAME(...),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thus&nbsp;invoking&nbsp;that&nbsp;function&nbsp;when&nbsp;the&nbsp;feed&nbsp;is&nbsp;executed.<br>
+raw&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;pure&nbsp;JSON&nbsp;object&nbsp;is&nbsp;returned,&nbsp;instead&nbsp;of&nbsp;code&nbsp;that&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;will&nbsp;construct&nbsp;an&nbsp;object&nbsp;named&nbsp;Delicious.tags.</tt></dd></dl>
+ <dl><dt><a name="-md5"><strong>md5</strong></a> = openssl_md5(...)</dt><dd><tt>Returns&nbsp;a&nbsp;md5&nbsp;hash&nbsp;object;&nbsp;optionally&nbsp;initialized&nbsp;with&nbsp;a&nbsp;string</tt></dd></dl>
+ <dl><dt><a name="-rename_tag"><strong>rename_tag</strong></a>(user, passwd, oldtag, newtag)</dt><dd><tt>Rename&nbsp;the&nbsp;tag&nbsp;for&nbsp;the&nbsp;del.icio.us&nbsp;account.</tt></dd></dl>
+ <dl><dt><a name="-user_posts"><strong>user_posts</strong></a>(user<font color="#909090">=None</font>, tag<font color="#909090">=None</font>, key<font color="#909090">=None</font>, **params)</dt><dd><tt>Bookmarks&nbsp;for&nbsp;a&nbsp;specific&nbsp;user:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{format}/{username}<br>
+Private&nbsp;bookmarks&nbsp;for&nbsp;a&nbsp;specific&nbsp;user:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{format}/{username}?private={key}<br>
+Bookmarks&nbsp;for&nbsp;a&nbsp;specific&nbsp;user&nbsp;by&nbsp;tag(s):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{format}/{username}/{tag[+tag+...+tag]}<br>
+Private&nbsp;bookmarks&nbsp;for&nbsp;a&nbsp;specific&nbsp;user&nbsp;by&nbsp;tag(s):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{format}/{username}/{tag[+tag+...+tag]}?private={key}</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>DEBUG</strong> = 0<br>
+<strong>DLCS_API</strong> = 'https://api.del.icio.us/v1'<br>
+<strong>DLCS_API_HOST</strong> = 'api.del.icio.us'<br>
+<strong>DLCS_API_PATH</strong> = 'v1'<br>
+<strong>DLCS_API_REALM</strong> = 'del.icio.us API'<br>
+<strong>DLCS_FEEDS</strong> = 'http://feeds.delicious.com/v2/'<br>
+<strong>DLCS_OK_MESSAGES</strong> = ('done', 'ok')<br>
+<strong>DLCS_REQUEST_TIMEOUT</strong> = 444<br>
+<strong>DLCS_RSS</strong> = 'http://feeds.delicious.com/rss/'<br>
+<strong>DLCS_WAIT_TIME</strong> = 4<br>
+<strong>HTTPS_PROXY</strong> = 'http://sam:8080/'<br>
+<strong>HTTP_PROXY</strong> = 'http://sam:8080/'<br>
+<strong>ISO_8601_DATETIME</strong> = '%Y-%m-%dT%H:%M:%SZ'<br>
+<strong>PREFERRED_ENCODING</strong> = 'UTF-8'<br>
+<strong>USER_AGENT</strong> = 'pydelicious/0.6 http://code.google.com/p/pydelicious/'<br>
+<strong>Waiter</strong> = &lt;__init__._Waiter instance&gt;<br>
+<strong>__author__</strong> = 'Berend (.mpe)'<br>
+<strong>__author_email__</strong> = 'dev,pydelicious@dotmpe.com'<br>
+<strong>__credits__</strong> = 'Frank Timmermann (original author), and in no<font color="#c040c0">\n</font>pa...o, me.gooz, mohangk, stumble.then.rise, clupprich'<br>
+<strong>__description__</strong> = "Access delicious.com API's with Python"<br>
+<strong>__docformat__</strong> = 'restructuredtext en'<br>
+<strong>__license__</strong> = 'FreeBSD'<br>
+<strong>__long_description__</strong> = "A complete Python interface to del.icio.us Bookmarks' HTTP API's."<br>
+<strong>__rcs_id__</strong> = ': __init__.py 68 2010-11-21 13:58:04Z berend.van.berkum '<br>
+<strong>__url__</strong> = 'http://code.google.com/p/pydelicious/'<br>
+<strong>__version__</strong> = '0.6'<br>
+<strong>delicious_v2_feeds</strong> = {'alerts': '%(format)s/alerts', 'hotlist': '%(format)s', 'popular': '%(format)s/popular', 'popular_tagged': '%(format)s/popular/%(tag)s', 'recent': '%(format)s/recent', 'tagged': '%(format)s/tag/%(tag)s', 'url': '%(format)s/url/%(urlmd5)s', 'urlinfo': 'json/urlinfo/%(urlmd5)s', 'user': '%(format)s/%(username)s', 'user_inbox': '%(format)s/inbox/%(username)s?private=%(key)s', ...}</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#7799ee">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Author</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#7799ee"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Berend&nbsp;(.mpe)</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#7799ee">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Credits</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#7799ee"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Frank&nbsp;Timmermann&nbsp;(original&nbsp;author),&nbsp;and&nbsp;in&nbsp;no<br>
+particular&nbsp;order:&nbsp;Greg&nbsp;Pinero,&nbsp;me.gooz,&nbsp;mohangk,&nbsp;stumble.then.rise,&nbsp;clupprich</td></tr></table>
+</body></html>

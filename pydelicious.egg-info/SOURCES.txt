@@ -1,0 +1,13 @@
+README.rst
+setup.py
+pydelicious/__init__.py
+pydelicious.egg-info/PKG-INFO
+pydelicious.egg-info/SOURCES.txt
+pydelicious.egg-info/dependency_links.txt
+pydelicious.egg-info/entry_points.txt
+pydelicious.egg-info/requires.txt
+pydelicious.egg-info/top_level.txt
+tools/__init__.py
+tools/cache.py
+tools/dlcs.py
+tools/dlcs_feeds.py

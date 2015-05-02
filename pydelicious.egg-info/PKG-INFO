@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: pydelicious
+Version: 0.6
+Summary: Access delicious.com API's with Python
+Home-page: http://code.google.com/p/pydelicious/
+Author: Berend (.mpe)
+Author-email: dev,pydelicious@dotmpe.com
+License: FreeBSD
+Description: A complete Python interface to del.icio.us Bookmarks' HTTP API's.
+Platform: UNKNOWN
+Requires: feedparser
